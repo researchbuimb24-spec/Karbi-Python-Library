@@ -386,6 +386,121 @@ Linguistic and cultural documentation of indigenous communities requires ethical
 
 ---
 
+---
+
+## Digital Book Library Subsystem (`karbi.books`)
+
+The Karbi Language Library features an extensible, offline-capable digital book library subsystem located in `src/karbi/books/`. It enables researchers, linguists, and community members to store, organize, read, search, and align complete literary works with strict provenance tracking.
+
+### 1. Initial Collection & Catalogue (20 Works)
+The library catalogue (`data/books/catalog.json`) tracks 20 foundational Indian literary, philosophical, and folklore works with transparent bibliographic citations and copyright status:
+
+| Book ID | Canonical Title | Author / Source | Status | Imported | Licence |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `bhagavad_gita` | **The Bhagavad Gita** | Vyāsa / Sir Edwin Arnold (1885) | `FULLY_IMPORTED` | 18 ch / 295 pass | Public Domain (Gutenberg #2388) |
+| `karbi_folktales_1908` | **Karbi Folk-Lore & Tales** | Stack, Sardoka & Lyall (1908) | `FULLY_IMPORTED` | 3 ch / 44 pass | Public Domain (Gutenberg #48706) |
+| `ramayana` | **The Ramayana of Valmiki** | Vālmīki / R. T. H. Griffith (1870) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #24869) |
+| `mahabharata` | **The Mahabharata of Vyasa** | Vyāsa / K. M. Ganguli (1883) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #7864) |
+| `panchatantra` | **The Panchatantra** | Vishnu Sharma / A. W. Ryder (1925) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (US 1925) |
+| `hitopadesha` | **The Hitopadesha** | Narayana / Sir Edwin Arnold (1861) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #13268) |
+| `upanishads` | **The Upanishads** | Vedic Sages / F. Max Müller (1879) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #3296) |
+| `rigveda` | **The Hymns of the Rigveda** | Vedic Rishis / R. T. H. Griffith (1896) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain |
+| `dhammapada` | **The Dhammapada** | Buddhist Canon / F. Max Müller (1881) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #2017) |
+| `jataka_tales` | **The Jataka Tales** | Buddhist Canon / E. B. Cowell (1895) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain |
+| `arthashastra` | **Kautilya's Arthashastra** | Kauṭilya / R. Shamasastry (1915) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain |
+| `indian_fairy_tales` | **Indian Fairy Tales** | Joseph Jacobs (1892) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #7128) |
+| `folk_tales_of_bengal` | **Folk-Tales of Bengal** | Rev. Lal Behari Day (1883) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #38488) |
+| `old_deccan_days` | **Old Deccan Days** | Mary Frere (1868) | `FULLY_IMPORTED` | 24 ch / 772 pass | Public Domain (Gutenberg #36696) |
+| `aesop_fables` | **Aesop's Fables** | Aesop / V. S. Vernon Jones (1912) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #11339) |
+| `history_of_assam_1906` | **A History of Assam** | Sir Edward Gait (1906) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain |
+| `buddhist_records_western_world` | **Si-Yu-Ki: Buddhist Records** | Xuanzang / Samuel Beal (1884) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain |
+| `shakuntala` | **Shakuntala** | Kālidāsa / Arthur W. Ryder (1912) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #16655) |
+| `history_of_hindu_chemistry` | **History of Hindu Chemistry** | Sir P. C. Ray (1902) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain |
+| `english_mikir_vocabulary_sentences_1878` | **Vocabulary & Sentences** | Rev. R. E. Neighbor (1878) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain |
+
+* **Catalogue Integrity:** Books marked `CATALOG_ONLY` contain verified bibliographic and rights metadata, with explicit notes on missing acquisition portions. They never claim passage counts until the full text is verified and imported.
+* **Complete Texts Imported:**
+  * **The Bhagavad Gita:** Complete 18 chapters and 295 stanzas/passages with chapter titles, verse structure, and full-text search indexing.
+  * **Karbi Folk-Lore & Folk-Tales:** 3 complete traditional narratives (The Story of a Frog, The Story of the Orphan and his Uncles, and The Story of Harata Kunwar) featuring 44 passages, including authentic Karbi language passages and parallel English translations.
+
+---
+
+### 2. Digital Book CLI Usage
+
+All book operations are accessible via `karbi books`:
+
+```bash
+# 1. List registered books in the catalogue
+karbi books list
+karbi books list --status FULLY_IMPORTED
+karbi books list --language sa
+
+# 2. Inspect detailed book metadata and rights
+karbi books info bhagavad_gita
+karbi books info ramayana
+
+# 3. Read passages and chapters
+karbi books read bhagavad_gita --chapter 1 --limit 5
+karbi books read karbi_folktales_1908 --chapter 1
+
+# 4. Search book passages using SQLite FTS5 full-text search
+karbi books search "Kurukshetra"
+karbi books search "frog" --book karbi_folktales_1908
+
+# 5. Import an authorized local book file (.jsonl, .json, .txt, .md)
+karbi books import path/to/text.txt --book-id my_book --title "My Book" --dry-run
+karbi books import path/to/text.txt --book-id my_book --title "My Book"
+
+# 6. Validate book integrity and passage sequences
+karbi books validate
+karbi books validate --book-id bhagavad_gita
+
+# 7. Display aggregated book library statistics
+karbi books stats
+```
+
+---
+
+### 3. Digital Book Python API
+
+```python
+import karbi
+
+# List registered books
+books = karbi.list_books(import_status="FULLY_IMPORTED")
+for b in books:
+    print(f"{b.book_id}: {b.canonical_title} ({b.imported_passages_count} passages)")
+
+# Retrieve book metadata
+meta = karbi.get_book_metadata("bhagavad_gita")
+print(f"Title: {meta['canonical_title']}, Translator: {meta['translator']}")
+
+# Read passages with chapter filtering and pagination
+passages = karbi.get_book_passages("bhagavad_gita", chapter=1, limit=3)
+for p in passages:
+    print(f"[{p.passage_id}] Verse {p.verse}: {p.text[:60]}...")
+
+# Full-text search across book passages
+results = karbi.search_book_text("Kurukshetra")
+for r in results:
+    print(f"[{r.passage_id}] Match in {r.book_title}: \"{r.matched_snippet}\"")
+
+# Check library statistics
+stats = karbi.get_book_statistics()
+print(f"Total Books: {stats['total_books']}, Fully Imported: {stats['fully_imported_books']}")
+```
+
+---
+
+### 4. Multilingual Translation Alignment & Vocabulary Extraction
+
+* **Bidirectional Passage Alignment (`karbi.books.translation`):**
+  Passages support multi-directional translation linking (Karbi ↔ English, Hindi, Assamese, Bengali, Sanskrit, Urdu, and extensible regional languages). Every alignment records provenance (`published_translation`, `community_reviewed`, `machine_draft`, `unverified`) and translation citations.
+* **Vocabulary Candidate Extraction (`karbi.books.vocabulary`):**
+  A dedicated candidate workflow extracts words and phrases from book passages, links candidates to their exact book and passage locator, and checks against the core lexicon. **Unreviewed candidates remain isolated in `data/books/candidates/` and never enter the authoritative lexicon automatically.**
+
+---
+
 ## Directory Structure
 
 ```
@@ -398,32 +513,54 @@ Linguistic and cultural documentation of indigenous communities requires ethical
 ├── docs/               # Community review guidelines and templates
 │   ├── COMMUNITY_REVIEW.md
 │   └── community_gloss_review_template.csv
-├── karbi.db            # Compiled SQLite runtime database with FTS5 (generated at runtime)
+├── karbi.db            # Compiled SQLite runtime database with FTS5 (lexicon + book tables)
 ├── data/               # Source JSON Lines data
+│   ├── books/          # Digital Book Library data
+│   │   ├── catalog.json       # Master book catalogue (20 registered works)
+│   │   ├── sources.jsonl      # Bibliographic source registry for books
+│   │   ├── texts/             # Complete imported texts (.jsonl)
+│   │   │   ├── bhagavad_gita.jsonl
+│   │   │   └── karbi_folktales_1908.jsonl
+│   │   ├── translations/      # Bidirectional translation alignments
+│   │   ├── manifests/         # Atomic import manifests with SHA-256 checksums
+│   │   └── candidates/        # Extracted vocabulary candidate queue
 │   ├── lexicon/        # Sharded dictionary entries
-│   ├── culture/        # Directory reserved for cultural records (rituals, folklore, deities)
+│   ├── culture/        # Cultural records (rituals, folklore, deities)
 │   └── sources/        # Bibliographic references and citations
 ├── src/
 │   └── karbi/          # Python library source code
 │       ├── __init__.py # Top-level package exports
 │       ├── __main__.py # Executable module entry point (python -m karbi)
-│       ├── api.py      # High-level search and batch operations
-│       ├── cli.py      # Command-line interface
+│       ├── api.py      # High-level search, lookup, and book operations
+│       ├── cli.py      # Command-line interface (lookup, translate, search, books)
 │       ├── dictionary.py # Headword lookup and spelling variants
 │       ├── translator.py # Multilingual translation engine
 │       ├── alphabet.py # Karbi orthography and phonetics
 │       ├── grammar.py  # Classifiers, pronouns, numbers
 │       ├── culture.py  # Cultural records and ethics policy
+│       ├── books/      # Digital Book Library Subsystem
+│       │   ├── __init__.py
+│       │   ├── models.py      # BookMetadata, Passage, TranslationRecord, VocabularyCandidate
+│       │   ├── catalog.py     # BookCatalog manager
+│       │   ├── importer.py    # Formats parser, atomic writer, FTS5 indexer
+│       │   ├── reader.py      # Passage streaming and pagination
+│       │   ├── search.py      # FTS5 search across passages and metadata
+│       │   ├── translation.py # Multilingual bidirectional alignment
+│       │   ├── validation.py  # Book integrity and sequence validation
+│       │   └── vocabulary.py  # Candidate extraction workflow
 │       └── core/       # Database compilation, models, and validation
 └── tests/              # Automated unit, integration, and packaging tests
     ├── test_alphabet_and_grammar.py
     ├── test_api.py
+    ├── test_books.py   # Comprehensive digital book library test suite
     ├── test_cli.py
     ├── test_contributor_workflow.py
     ├── test_dataset.py
     ├── test_loader.py
     ├── test_packaging.py
     ├── test_resources.py
+    ├── test_review.py
+    ├── test_session.py
     ├── test_translation.py
     └── test_validation.py
 ```

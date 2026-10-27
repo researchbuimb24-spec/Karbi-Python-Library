@@ -21,6 +21,11 @@ import unicodedata
 from karbi.core.dataset import DatasetValidationResult, validate_dataset_files
 from karbi.core.db import DEFAULT_DB_PATH, ensure_database_ready, get_db_connection
 from karbi.core.resources import get_resource_paths
+from karbi.core.review import (
+    CommunityReviewRow,
+    CommunityReviewValidationResult,
+    validate_community_review_csv,
+)
 from karbi.dictionary import DictionaryEntry, batch_lookup, lookup, lookup_all
 from karbi.translator import (
     SUPPORTED_LANGUAGES,
@@ -363,6 +368,186 @@ def validate_dataset(
             )
         res.is_valid = False
     return res
+
+
+# =========================================================================
+# Digital Book Library Public API
+# =========================================================================
+
+def list_books(
+    import_status: Optional[str] = None,
+    language: Optional[str] = None,
+    document_type: Optional[str] = None,
+) -> List[Any]:
+    """
+    Lists digital books registered in the library catalogue.
+
+    Args:
+        import_status: Filter by 'CATALOG_ONLY', 'PARTIALLY_IMPORTED', or 'FULLY_IMPORTED'.
+        language: Filter by original language code (e.g. 'sa', 'mjw', 'en').
+        document_type: Filter by category (e.g. 'epic', 'philosophy', 'fable', 'folklore').
+
+    Returns:
+        List of BookMetadata objects sorted by book_id.
+    """
+    from karbi.books.catalog import BookCatalog
+
+    cat = BookCatalog()
+    return cat.list_books(
+        import_status=import_status,
+        language=language,
+        document_type=document_type,
+    )
+
+
+def get_book(book_id: str) -> Optional[Any]:
+    """
+    Retrieves full catalogue metadata for a book by its book_id.
+    """
+    from karbi.books.catalog import BookCatalog
+
+    return BookCatalog().get_book(book_id)
+
+
+def get_book_metadata(book_id: str) -> Optional[Dict[str, Any]]:
+    """
+    Retrieves dictionary-formatted metadata for a book.
+    """
+    b = get_book(book_id)
+    return b.to_dict() if b else None
+
+
+def get_book_chapters(book_id: str) -> List[Dict[str, Any]]:
+    """
+    Retrieves chapter list and verse/passage counts for an imported book.
+    """
+    from karbi.books.reader import BookReader
+
+    return BookReader().get_book_chapters(book_id)
+
+
+def get_passage(passage_id: str) -> Optional[Any]:
+    """
+    Retrieves an individual passage by its unique ID (e.g. 'bhagavad_gita:1:1').
+    """
+    from karbi.books.reader import BookReader
+
+    return BookReader().get_passage(passage_id)
+
+
+def get_book_passages(
+    book_id: str,
+    chapter: Optional[int] = None,
+    limit: Optional[int] = None,
+    offset: int = 0,
+) -> List[Any]:
+    """
+    Retrieves passages for an imported book with optional chapter filter and pagination.
+    """
+    from karbi.books.reader import BookReader
+
+    return BookReader().get_book_passages(
+        book_id=book_id,
+        chapter=chapter,
+        limit=limit,
+        offset=offset,
+    )
+
+
+def search_books(query: str) -> List[Any]:
+    """
+    Searches the book catalogue metadata by title, author, translator, or subject.
+    """
+    from karbi.books.search import BookSearchEngine
+
+    return BookSearchEngine().search_books(query)
+
+
+def search_book_text(
+    query: str,
+    book_id: Optional[str] = None,
+    language: Optional[str] = None,
+    limit: int = 20,
+    offset: int = 0,
+) -> List[Any]:
+    """
+    Performs full-text search across book passages using SQLite FTS5.
+
+    Args:
+        query: Search term or phrase.
+        book_id: Optional filter for a specific book ID.
+        language: Optional language code filter ('en', 'mjw', 'sa', etc.).
+        limit: Max results to return (default: 20).
+        offset: Result offset for pagination.
+
+    Returns:
+        List of BookSearchResult objects containing snippet, chapter, verse, and text.
+    """
+    from karbi.books.search import BookSearchEngine
+
+    return BookSearchEngine().search_book_text(
+        query=query,
+        book_id=book_id,
+        language=language,
+        limit=limit,
+        offset=offset,
+    )
+
+
+def import_book(
+    file_path: Union[str, Path],
+    metadata: Optional[Any] = None,
+    book_id: Optional[str] = None,
+    language: str = "en",
+    dry_run: bool = False,
+    overwrite: bool = False,
+) -> Any:
+    """
+    Imports a book text file (.jsonl, .json, .txt, .md) into the digital library.
+    """
+    from karbi.books.importer import BookImporter
+
+    importer = BookImporter()
+    return importer.import_file(
+        file_path=file_path,
+        metadata=metadata,
+        book_id=book_id,
+        language=language,
+        dry_run=dry_run,
+        overwrite=overwrite,
+    )
+
+
+def validate_book(book_id: str) -> Any:
+    """
+    Validates integrity, passage sequence, unique IDs, and licensing for a book.
+    """
+    from karbi.books.validation import validate_book as _vb
+
+    return _vb(book_id)
+
+
+def get_book_statistics(book_id: Optional[str] = None) -> Dict[str, Any]:
+    """
+    Retrieves statistical metrics for the book library or a specific book.
+    """
+    from karbi.books.catalog import BookCatalog
+
+    cat = BookCatalog()
+    if book_id:
+        b = cat.get_book(book_id)
+        if not b:
+            return {}
+        return {
+            "book_id": b.book_id,
+            "title": b.canonical_title,
+            "status": b.import_status,
+            "chapters": b.imported_chapters_count,
+            "passages": b.imported_passages_count,
+            "checksum": b.content_checksum,
+            "licence": b.licence,
+        }
+    return cat.get_stats()
 
 
 __all__ = [

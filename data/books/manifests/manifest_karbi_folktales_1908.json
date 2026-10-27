@@ -1,0 +1,14 @@
+{
+  "book_id": "karbi_folktales_1908",
+  "canonical_title": "Karbi Folk-Lore and Folk-Tales (The Mikirs)",
+  "source_file_path": "data/books/texts/karbi_folktales_1908.jsonl",
+  "sha256_checksum": "16267851e70787d49ce5ff8f98314ec2e5d8526fbeef96b9adcf2b6cb1a3b383",
+  "total_chapters": 4,
+  "total_passages": 44,
+  "language": "mjw",
+  "import_timestamp": "2026-10-26T12:46:18.823828+00:00",
+  "licence": "Public Domain (US, UK, EU, India; author and editor deceased >70 years; published 1908)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Historical ethnographic text (1908). Transcribed by Edward Stack and edited by Sir Charles Lyall from narratives by native speaker and linguist Sardoka Perrin Kay. Represents historical source attestation; does not constitute contemporary native-speaker community consent, elder validation, or institutional approval."
+}

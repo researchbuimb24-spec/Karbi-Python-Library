@@ -132,6 +132,7 @@ def _raw_to_entry(raw: Dict[str, Any], cur: sqlite3.Cursor) -> DictionaryEntry:
 
 def lookup_all(
     karbi_word: str,
+    verified_only: bool = False,
     db_path: Optional[Union[str, Path]] = None,
     conn: Optional[sqlite3.Connection] = None,
 ) -> List[DictionaryEntry]:
@@ -140,6 +141,8 @@ def lookup_all(
 
     Args:
         karbi_word: The Karbi word to search for (e.g. 'arlèng', 'hem', 'cho').
+        verified_only: If True, only returns entries whose status is verified or source-attested
+                       (excluding DRAFT, AI_CANDIDATE, and CITATION_MISMATCH entries).
         db_path: Optional custom path to compiled SQLite database.
         conn: Optional active sqlite3.Connection to reuse for batch operations.
 
@@ -247,6 +250,12 @@ def lookup_all(
                             entries.append(_raw_to_entry(c_raw, cur))
                         break
 
+        if verified_only:
+            entries = [
+                e for e in entries
+                if e.status in ("SOURCE_ATTESTED", "VERIFIED", "CONFIRMED_FROM_SOURCE")
+            ]
+
         return entries
     finally:
         if should_close:
@@ -259,6 +268,7 @@ def lookup_all(
 def lookup(
     karbi_word: str,
     dialect: Optional[str] = None,
+    verified_only: bool = False,
     db_path: Optional[Union[str, Path]] = None,
     conn: Optional[sqlite3.Connection] = None,
 ) -> Optional[DictionaryEntry]:
@@ -268,13 +278,14 @@ def lookup(
     Args:
         karbi_word: The Karbi word to search for (e.g. 'arlèng', 'hem', 'làng').
         dialect: Optional dialect filter (e.g. 'rongkhang').
+        verified_only: If True, only returns verified or source-attested entries.
         db_path: Optional custom path to compiled SQLite database.
         conn: Optional active sqlite3.Connection to reuse.
 
     Returns:
         DictionaryEntry object if found, or None.
     """
-    entries = lookup_all(karbi_word, db_path=db_path, conn=conn)
+    entries = lookup_all(karbi_word, verified_only=verified_only, db_path=db_path, conn=conn)
     if not entries:
         return None
     if dialect:
@@ -286,6 +297,7 @@ def lookup(
 
 def batch_lookup(
     karbi_words: Sequence[str],
+    verified_only: bool = False,
     db_path: Optional[Union[str, Path]] = None,
     conn: Optional[sqlite3.Connection] = None,
 ) -> Dict[str, Optional[DictionaryEntry]]:
@@ -295,6 +307,7 @@ def batch_lookup(
 
     Args:
         karbi_words: Iterable of Karbi words to look up.
+        verified_only: If True, only returns verified or source-attested entries.
         db_path: Optional custom path to compiled SQLite database.
         conn: Optional active sqlite3.Connection to reuse.
 
@@ -308,7 +321,7 @@ def batch_lookup(
         should_close = True
 
     try:
-        return {word: lookup(word, db_path=db_path, conn=conn) for word in karbi_words}
+        return {word: lookup(word, verified_only=verified_only, db_path=db_path, conn=conn) for word in karbi_words}
     finally:
         if should_close:
             try:

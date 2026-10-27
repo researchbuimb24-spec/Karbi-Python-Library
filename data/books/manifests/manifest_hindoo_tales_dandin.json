@@ -1,0 +1,14 @@
+{
+  "book_id": "hindoo_tales_dandin",
+  "canonical_title": "Hindoo Tales",
+  "source_file_path": "data/books/texts/hindoo_tales_dandin.jsonl",
+  "sha256_checksum": "7d124bc74329aa9c466749f3a7b6e4d58395b8b36668eafbdf7d0286fe291702",
+  "total_chapters": 11,
+  "total_passages": 684,
+  "language": "en",
+  "import_timestamp": "2026-10-27T14:38:48.662252+00:00",
+  "licence": "Public Domain (Project Gutenberg eBook #11738)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 684 passages across 11 structural units from Project Gutenberg."
+}

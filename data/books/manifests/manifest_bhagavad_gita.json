@@ -1,0 +1,14 @@
+{
+  "book_id": "bhagavad_gita",
+  "canonical_title": "The Bhagavad Gita",
+  "source_file_path": "data/books/texts/bhagavad_gita.jsonl",
+  "sha256_checksum": "fc31180714faa8a2d6c9f75bd94b0b30b4b0a0286d55475a29c8d8bb6c28b10b",
+  "total_chapters": 18,
+  "total_passages": 258,
+  "language": "sa",
+  "import_timestamp": "2026-10-26T12:46:15.634115+00:00",
+  "licence": "Public Domain (US, UK, EU, India; translator deceased >70 years; published 1885)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Complete translation of the 18 chapters (258 stanzas) by Sir Edwin Arnold (1885). 37 scholarly translator endnotes are preserved in annotations/annotations_bhagavad_gita.json and excluded from stanza records."
+}

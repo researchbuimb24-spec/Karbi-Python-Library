@@ -1,0 +1,14 @@
+{
+  "book_id": "vikram_and_the_vampire",
+  "canonical_title": "Vikram and the Vampire",
+  "source_file_path": "data/books/texts/vikram_and_the_vampire.jsonl",
+  "sha256_checksum": "952fb7ea0b06953126987ddca26b3c8d5aa3b8c8cfae209b8b506a91662ed4f0",
+  "total_chapters": 12,
+  "total_passages": 1254,
+  "language": "en",
+  "import_timestamp": "2026-10-27T14:38:48.662252+00:00",
+  "licence": "Public Domain (Project Gutenberg eBook #2400)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 1254 passages across 12 structural units from Project Gutenberg."
+}

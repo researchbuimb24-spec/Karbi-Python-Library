@@ -1,0 +1,14 @@
+{
+  "book_id": "dhammapada",
+  "canonical_title": "The Dhammapada",
+  "source_file_path": "data/books/texts/dhammapada.jsonl",
+  "sha256_checksum": "39deb9d3217c8a44faa4e56b078aee5863b1fc2e33e6f9b49efa4ffe6307306e",
+  "total_chapters": 26,
+  "total_passages": 414,
+  "language": "pi",
+  "import_timestamp": "2026-10-26T13:56:52.245543+00:00",
+  "licence": "Public Domain (US, UK, EU, India; translator deceased >70 years; published 1881)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 414 passage entries representing all 423 canonical Pali verses across 26 Vaggas."
+}

@@ -1,0 +1,14 @@
+{
+  "book_id": "folklore_santal_parganas",
+  "canonical_title": "Folklore of the Santal Parganas",
+  "source_file_path": "data/books/texts/folklore_santal_parganas.jsonl",
+  "sha256_checksum": "a09aa665c29883f93bbc03fbb8e21a3e3720b7e20bde084c76e7c4b81d583170",
+  "total_chapters": 185,
+  "total_passages": 1364,
+  "language": "en",
+  "import_timestamp": "2026-10-27T14:38:48.662252+00:00",
+  "licence": "Public Domain (Project Gutenberg eBook #11938)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 1364 passages across 185 structural units from Project Gutenberg."
+}

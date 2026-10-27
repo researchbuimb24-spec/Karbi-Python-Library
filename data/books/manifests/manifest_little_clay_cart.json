@@ -1,0 +1,14 @@
+{
+  "book_id": "little_clay_cart",
+  "canonical_title": "The Little Clay Cart",
+  "source_file_path": "data/books/texts/little_clay_cart.jsonl",
+  "sha256_checksum": "1dd0bca2de95416a90ed6434132f32e3bf615f27b2cfdbac8c6168c4b8c996b7",
+  "total_chapters": 12,
+  "total_passages": 2314,
+  "language": "en",
+  "import_timestamp": "2026-10-27T14:38:48.662252+00:00",
+  "licence": "Public Domain (Project Gutenberg eBook #21020)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 2314 passages across 12 structural units from Project Gutenberg."
+}

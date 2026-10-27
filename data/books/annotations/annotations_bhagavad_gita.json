@@ -1,0 +1,304 @@
+{
+  "book_id": "bhagavad_gita",
+  "total_annotations": 37,
+  "annotation_type": "translator_scholarly_footnotes",
+  "notes": "Scholarly translator endnotes by Sir Edwin Arnold (1885), preserved separately from poetic stanza passages.",
+  "annotations": [
+    {
+      "annotation_id": "FN:1",
+      "note_number": 1,
+      "marker": "[FN#1]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#1]  Some repetitionary lines are here omitted."
+    },
+    {
+      "annotation_id": "FN:2",
+      "note_number": 2,
+      "marker": "[FN#2]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#2]  Technical phrases of Vedic religion."
+    },
+    {
+      "annotation_id": "FN:3",
+      "note_number": 3,
+      "marker": "[FN#3]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#3]  The whole of this passage is highly involved and difficult to\nrender."
+    },
+    {
+      "annotation_id": "FN:4",
+      "note_number": 4,
+      "marker": "[FN#4]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#4]  I feel convinced sankhyanan and yoginan must be transposed\nhere in sense."
+    },
+    {
+      "annotation_id": "FN:5",
+      "note_number": 5,
+      "marker": "[FN#5]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#5]  I am doubtful of accuracy here."
+    },
+    {
+      "annotation_id": "FN:6",
+      "note_number": 6,
+      "marker": "[FN#6]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#6]  A name of the sun."
+    },
+    {
+      "annotation_id": "FN:7",
+      "note_number": 7,
+      "marker": "[FN#7]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#7]  Without desire of fruit."
+    },
+    {
+      "annotation_id": "FN:8",
+      "note_number": 8,
+      "marker": "[FN#8]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#8]  That is,\"joy and sorrow, success and failure, heat and cold,\"&c."
+    },
+    {
+      "annotation_id": "FN:9",
+      "note_number": 9,
+      "marker": "[FN#9]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#9]  i.e., the body."
+    },
+    {
+      "annotation_id": "FN:10",
+      "note_number": 10,
+      "marker": "[FN#10]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#10]  The Sanskrit has this play on the double meaning of Atman."
+    },
+    {
+      "annotation_id": "FN:11",
+      "note_number": 11,
+      "marker": "[FN#11]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#11]  So in original."
+    },
+    {
+      "annotation_id": "FN:12",
+      "note_number": 12,
+      "marker": "[FN#12]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#12]  Beings of low and devilish nature."
+    },
+    {
+      "annotation_id": "FN:13",
+      "note_number": 13,
+      "marker": "[FN#13]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#13]  Krishna."
+    },
+    {
+      "annotation_id": "FN:14",
+      "note_number": 14,
+      "marker": "[FN#14]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#14]  I read here janma, \"birth;\" not jara,\"age\""
+    },
+    {
+      "annotation_id": "FN:15",
+      "note_number": 15,
+      "marker": "[FN#15]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#15]  I have discarded ten lines of Sanskrit text here as an\nundoubted interpolation by some Vedantist"
+    },
+    {
+      "annotation_id": "FN:16",
+      "note_number": 16,
+      "marker": "[FN#16]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#16]  The Sanskrit poem here rises to an elevation of style and\nmanner which I have endeavoured to mark by change of metre."
+    },
+    {
+      "annotation_id": "FN:17",
+      "note_number": 17,
+      "marker": "[FN#17]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#17]  Ahinsa."
+    },
+    {
+      "annotation_id": "FN:18",
+      "note_number": 18,
+      "marker": "[FN#18]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#18]  The nectar of immortality."
+    },
+    {
+      "annotation_id": "FN:19",
+      "note_number": 19,
+      "marker": "[FN#19]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#19]  Called \"The Jap.\""
+    },
+    {
+      "annotation_id": "FN:20",
+      "note_number": 20,
+      "marker": "[FN#20]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#20]  The compound form of Sanskrit words."
+    },
+    {
+      "annotation_id": "FN:21",
+      "note_number": 21,
+      "marker": "[FN#21]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#21]  \"Kamalapatraksha\""
+    },
+    {
+      "annotation_id": "FN:22",
+      "note_number": 22,
+      "marker": "[FN#22]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#22]  These are all divine or deified orders of the Hindoo Pantheon."
+    },
+    {
+      "annotation_id": "FN:23",
+      "note_number": 23,
+      "marker": "[FN#23]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#23]  \"Hail to Thee, God of Gods! Be favourable!\""
+    },
+    {
+      "annotation_id": "FN:24",
+      "note_number": 24,
+      "marker": "[FN#24]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#24]  The wind."
+    },
+    {
+      "annotation_id": "FN:25",
+      "note_number": 25,
+      "marker": "[FN#25]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#25]  \"Not peering about,\"anapeksha."
+    },
+    {
+      "annotation_id": "FN:26",
+      "note_number": 26,
+      "marker": "[FN#26]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#26]  The Calcutta edition of the Mahabharata has these three\nopening lines."
+    },
+    {
+      "annotation_id": "FN:27",
+      "note_number": 27,
+      "marker": "[FN#27]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#27]  This is the nearest possible version of\nKshetrakshetrajnayojnanan yat tajnan matan mama."
+    },
+    {
+      "annotation_id": "FN:28",
+      "note_number": 28,
+      "marker": "[FN#28]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#28]  I omit two lines of the Sanskrit here, evidently interpolated by\nsome Vedantist."
+    },
+    {
+      "annotation_id": "FN:29",
+      "note_number": 29,
+      "marker": "[FN#29]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#29]  Wombs."
+    },
+    {
+      "annotation_id": "FN:30",
+      "note_number": 30,
+      "marker": "[FN#30]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#30]  I do not consider the Sanskrit verses here-which are somewhat\nfreely rendered--\"an attack on the authority of the Vedas,\" with Mr\nDavies, but a beautiful lyrical episode, a new \"Parable of the fig-tree.\""
+    },
+    {
+      "annotation_id": "FN:31",
+      "note_number": 31,
+      "marker": "[FN#31]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#31]  I omit a verse here, evidently interpolated."
+    },
+    {
+      "annotation_id": "FN:32",
+      "note_number": 32,
+      "marker": "[FN#32]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#32]  \"Of the Asuras,\" lit."
+    },
+    {
+      "annotation_id": "FN:33",
+      "note_number": 33,
+      "marker": "[FN#33]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#33]  I omit the ten concluding shlokas, with Mr Davis."
+    },
+    {
+      "annotation_id": "FN:34",
+      "note_number": 34,
+      "marker": "[FN#34]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#34]  Rakshasas and Yakshas are unembodied but capricious beings\nof great power, gifts, and beauty, same times also of benignity."
+    },
+    {
+      "annotation_id": "FN:35",
+      "note_number": 35,
+      "marker": "[FN#35]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#35]  These are spirits of evil wandering ghosts."
+    },
+    {
+      "annotation_id": "FN:36",
+      "note_number": 36,
+      "marker": "[FN#36]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#36]  Yatayaman, food which has remained after the watches of the\nnight. In India this would probably \"go bad.\""
+    },
+    {
+      "annotation_id": "FN:37",
+      "note_number": 37,
+      "marker": "[FN#37]",
+      "type": "translator_endnote",
+      "author": "Sir Edwin Arnold",
+      "text": "[FN#37]  I omit the concluding shlokas, as of very doubtful authenticity."
+    }
+  ]
+}

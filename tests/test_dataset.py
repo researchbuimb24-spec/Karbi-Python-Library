@@ -404,6 +404,53 @@ class TestCanonicalRepositoryDataset(unittest.TestCase):
         self.assertIn("chikli", entries)
         self.assertEqual(entries["chikli"]["senses"][0]["definitions"]["en"], ["earthquake"])
 
+    def test_per_language_verified_and_unverified_audit_metrics(self):
+        """Audit report exposes accurate per-language verified, unverified, and total counts."""
+        repo_root = Path(__file__).resolve().parent.parent
+        lex_file = repo_root / "data" / "lexicon" / "core_lexicon.jsonl"
+        src_file = repo_root / "data" / "sources" / "sources.jsonl"
+
+        validator = DatasetValidator()
+        res = validator.validate([lex_file], [src_file])
+
+        self.assertTrue(res.is_valid)
+        self.assertEqual(res.lexicon_entries_count, 516)
+        self.assertEqual(res.sources_count, 4)
+
+        # Quantitative counts
+        self.assertEqual(res.total_glosses_count, 1659)
+        self.assertEqual(res.verified_glosses_count, 1097)
+        self.assertEqual(res.unverified_glosses_count, 562)
+
+        # Per-language verified counts
+        self.assertEqual(res.verified_glosses_by_lang["en"], 1097)
+        self.assertEqual(res.verified_glosses_by_lang.get("hi", 0), 0)
+        self.assertEqual(res.verified_glosses_by_lang.get("as", 0), 0)
+        self.assertEqual(res.verified_glosses_by_lang.get("bn", 0), 0)
+
+        # Per-language unverified counts
+        self.assertEqual(res.unverified_glosses_by_lang["en"], 1)
+        self.assertEqual(res.unverified_glosses_by_lang["hi"], 206)
+        self.assertEqual(res.unverified_glosses_by_lang["as"], 186)
+        self.assertEqual(res.unverified_glosses_by_lang["bn"], 169)
+
+        # Citation mismatch tracking
+        self.assertEqual(res.citation_mismatch_entries, ["KB-LEX-0000382"])
+
+        # Dict serialization and report formatting
+        data = res.as_dict()
+        self.assertIn("verified_glosses_count", data)
+        self.assertIn("verified_glosses_by_lang", data)
+        self.assertIn("total_glosses_count", data)
+        self.assertIn("citation_mismatch_entries", data)
+
+        report_str = res.report(verbose=True)
+        self.assertIn("Total Definitions/Glosses:   1659", report_str)
+        self.assertIn("Verified Glosses:            1097 (66.1%)", report_str)
+        self.assertIn("Language 'en':        1097 /  1098 verified", report_str)
+        self.assertIn("Language 'hi':           0 /   206 verified", report_str)
+        self.assertIn("Mismatch IDs: KB-LEX-0000382", report_str)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -167,7 +167,7 @@ def init_db_schema(conn: sqlite3.Connection) -> None:
     cur.execute("CREATE INDEX IF NOT EXISTS idx_variant_lookup ON spelling_variants_index(variant_term);")
     cur.execute("CREATE INDEX IF NOT EXISTS idx_variant_entry ON spelling_variants_index(entry_id);")
 
-    # 6. Full-Text Search (FTS5) Virtual Table
+    # 6. Full-Text Search (FTS5) Virtual Table for Lexicon
     try:
         cur.execute("""
             CREATE VIRTUAL TABLE IF NOT EXISTS fts_lexicon USING fts5(
@@ -184,7 +184,126 @@ def init_db_schema(conn: sqlite3.Connection) -> None:
     except sqlite3.OperationalError:
         pass  # FTS5 not compiled or disabled; database continues with relational indices
 
+    # 7. Books Catalogue Table
+    cur.execute("""
+        CREATE TABLE IF NOT EXISTS books (
+            book_id TEXT PRIMARY KEY,
+            canonical_title TEXT NOT NULL,
+            alternate_titles_json TEXT,
+            author TEXT,
+            original_language TEXT NOT NULL,
+            original_script TEXT,
+            translator TEXT,
+            editor TEXT,
+            edition TEXT,
+            publisher TEXT,
+            publication_year INTEGER,
+            document_type TEXT,
+            volume TEXT,
+            source_id TEXT,
+            source_title TEXT,
+            source_url TEXT,
+            access_date TEXT,
+            copyright_status TEXT NOT NULL,
+            licence TEXT NOT NULL,
+            permitted_reuse TEXT,
+            attribution_requirements TEXT,
+            redistribution_restrictions TEXT,
+            import_status TEXT NOT NULL,
+            imported_chapters_count INTEGER DEFAULT 0,
+            imported_passages_count INTEGER DEFAULT 0,
+            content_checksum TEXT,
+            import_timestamp TEXT,
+            text_path TEXT,
+            notes TEXT,
+            raw_json TEXT NOT NULL
+        );
+    """)
+
+    # 8. Book Passages Table
+    cur.execute("""
+        CREATE TABLE IF NOT EXISTS book_passages (
+            passage_id TEXT PRIMARY KEY,
+            book_id TEXT NOT NULL,
+            language TEXT NOT NULL,
+            chapter_number INTEGER,
+            chapter_title TEXT,
+            section TEXT,
+            verse INTEGER,
+            paragraph INTEGER,
+            sequence_number INTEGER NOT NULL,
+            text TEXT NOT NULL,
+            source_reference TEXT,
+            provenance_status TEXT NOT NULL,
+            translation_links_json TEXT,
+            raw_json TEXT NOT NULL,
+            FOREIGN KEY(book_id) REFERENCES books(book_id) ON DELETE CASCADE
+        );
+    """)
+    cur.execute("CREATE INDEX IF NOT EXISTS idx_passages_book ON book_passages(book_id);")
+    cur.execute("CREATE INDEX IF NOT EXISTS idx_passages_chapter ON book_passages(book_id, chapter_number);")
+    cur.execute("CREATE INDEX IF NOT EXISTS idx_passages_lang ON book_passages(language);")
+
+    # 9. Book Translations Table (Bidirectional)
+    cur.execute("""
+        CREATE TABLE IF NOT EXISTS book_translations (
+            translation_id TEXT PRIMARY KEY,
+            source_passage_id TEXT NOT NULL,
+            target_passage_id TEXT,
+            source_language TEXT NOT NULL,
+            target_language TEXT NOT NULL,
+            translated_text TEXT NOT NULL,
+            translation_type TEXT NOT NULL,
+            translator TEXT,
+            reviewer_id TEXT,
+            review_status TEXT NOT NULL,
+            source_citation TEXT,
+            notes TEXT,
+            FOREIGN KEY(source_passage_id) REFERENCES book_passages(passage_id) ON DELETE CASCADE
+        );
+    """)
+    cur.execute("CREATE INDEX IF NOT EXISTS idx_trans_source_pid ON book_translations(source_passage_id);")
+    cur.execute("CREATE INDEX IF NOT EXISTS idx_trans_langs ON book_translations(source_language, target_language);")
+
+    # 10. Vocabulary Candidates Queue Table
+    cur.execute("""
+        CREATE TABLE IF NOT EXISTS book_vocab_candidates (
+            candidate_id TEXT PRIMARY KEY,
+            source_passage_id TEXT NOT NULL,
+            book_id TEXT NOT NULL,
+            source_term TEXT NOT NULL,
+            source_language TEXT NOT NULL,
+            context_sentence TEXT NOT NULL,
+            proposed_karbi_term TEXT,
+            dialect TEXT,
+            status TEXT NOT NULL,
+            reviewer_id TEXT,
+            reviewer_notes TEXT,
+            existing_lexicon_entry_id TEXT,
+            created_at TEXT,
+            FOREIGN KEY(source_passage_id) REFERENCES book_passages(passage_id) ON DELETE CASCADE
+        );
+    """)
+    cur.execute("CREATE INDEX IF NOT EXISTS idx_vocab_cand_book ON book_vocab_candidates(book_id);")
+    cur.execute("CREATE INDEX IF NOT EXISTS idx_vocab_cand_status ON book_vocab_candidates(status);")
+
+    # 11. Full-Text Search (FTS5) Virtual Table for Book Passages
+    try:
+        cur.execute("""
+            CREATE VIRTUAL TABLE IF NOT EXISTS fts_passages USING fts5(
+                passage_id UNINDEXED,
+                book_id UNINDEXED,
+                language UNINDEXED,
+                chapter_title,
+                text,
+                tokenize = 'unicode61 remove_diacritics 0'
+            );
+        """)
+    except sqlite3.OperationalError:
+        pass
+
     conn.commit()
+
 
 
 def compile_database(

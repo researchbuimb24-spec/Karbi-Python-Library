@@ -1,0 +1,14 @@
+{
+  "book_id": "mahabharata",
+  "canonical_title": "The Mahabharata of Krishna-Dwaipayana Vyasa",
+  "source_file_path": "data/books/texts/mahabharata.jsonl",
+  "sha256_checksum": "0d48856827dffc61c200149c50f28e4da1c8eb459ed9c8d0f487887685b33f91",
+  "total_chapters": 236,
+  "total_passages": 1526,
+  "language": "sa",
+  "import_timestamp": "2026-10-26T13:51:09.157247+00:00",
+  "licence": "Public Domain (US, UK, EU, India; translator deceased >70 years; published 1883-1896)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Partial epic import: Adi Parva (Book 1) complete in 236 sections and 1,526 passages translated by Kisari Mohan Ganguli (1883). Parvas 2-18 (Sabha through Svargarohana Parvas) are not present and await subsequent volume ingestion."
+}

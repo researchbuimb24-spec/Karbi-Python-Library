@@ -1,0 +1,14 @@
+{
+  "book_id": "tales_of_the_punjab",
+  "canonical_title": "Tales of the Punjab",
+  "source_file_path": "data/books/texts/tales_of_the_punjab.jsonl",
+  "sha256_checksum": "b6a0aba6bded91ba4163e780986f7b5c22162e7808f28170080587c1eb3c61b5",
+  "total_chapters": 42,
+  "total_passages": 1452,
+  "language": "en",
+  "import_timestamp": "2026-10-27T14:38:48.662252+00:00",
+  "licence": "Public Domain (Project Gutenberg eBook #6145)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 1452 passages across 42 structural units from Project Gutenberg."
+}

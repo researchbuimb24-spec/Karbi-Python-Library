@@ -37,13 +37,14 @@ Each row in `docs/community_gloss_review_template.csv` contains the following fi
 | Field Name | Type | Required | Description |
 | :--- | :--- | :--- | :--- |
 | `entry_id` | String | Yes | Unique entry identifier (e.g., `KB-LEX-0000001`). |
-| `source_language` | String | Yes | ISO code of the reviewed gloss language (`hi`, `as`, `bn`, `en`). |
+| `source_language` | String | Yes | ISO code of the reviewed gloss language (`hi`, `as`, `bn`, `en`, `mr`, `kha`). |
 | `source_word` | String | Yes | The source language term or candidate translation under review. |
 | `proposed_karbi_form` | String | Yes | The canonical Karbi headword or recommended spelling. |
 | `proposed_gloss` | String | Yes | The definition or equivalent term in the reviewed language. |
 | `source_evidence` | String | Yes | Basis of review: native speaker usage, oral tradition, published dictionary, or community body. |
-| `reviewer_name_or_pseudonym`| String | Yes | Name, initials, or pseudonym of the reviewer (for audit provenance). |
-| `dialect_or_community` | String | Optional | Dialect variety (e.g., Rongkhang, Chinthong, Amri, Dumrali). |
+| `reviewer_name_or_pseudonym`| String | Yes | Pseudonym, initials, elder title, or organization name (real legal name NOT required). |
+| `reviewer_consent_or_attribution`| String | Optional | Consent and attribution preference (e.g., `Pseudonym consented`, `Anonymous / Community Elder`, `Institutional attribution consented`). |
+| `dialect_or_community` | String | Optional | Dialect variety (e.g., Rongkhang, Chinthong, Amri, Dumrali/Plains). |
 | `decision` | String | Yes | One of: `accepted`, `corrected`, `rejected`, `awaiting_review`. |
 | `correction` | String | If corrected| The corrected translation string if decision is `corrected`. |
 | `notes` | String | If rejected | Detailed explanation, cultural context, or dialectal reasoning. |
@@ -55,24 +56,43 @@ Each row in `docs/community_gloss_review_template.csv` contains the following fi
 
 When evaluating submitted reviews, repository maintainers must follow strict standards:
 
-1. **Authenticity First:**
+1. **Authenticity First & Distinguishing Sources:**
+   - Contemporary community review is strictly distinguished from colonial historical print citations (`SRC-PUB-*`).
    - Do not manufacture reviewer identities, review events, or consensus where none exists.
    - Genuine native-speaker feedback takes precedence over historical colonial glosses for contemporary spoken usage.
-2. **Dialect Respect:**
-   - Karbi has regional varieties (Rongkhang as the central/standard literary variety, alongside Chinthong, Amri, and Dumrali/Plains Karbi). Dialect-specific glosses should be tagged with their variety rather than discarded.
-3. **Audit Trail Preservation:**
+2. **Privacy and Attribution Consent:**
+   - Community reviewers are **never required to disclose their legal name**. Pseudonyms, anonymous elder designations, and community group attributions are fully supported and respected.
+3. **Dialect-Sensitive & Culturally Sensitive Entries:**
+   - **Dialect Sensitivity:** Karbi has regional varieties (Rongkhang as the standard literary variety, alongside Chinthong, Amri, and Dumrali/Plains Karbi). Dialect-specific submissions are automatically flagged and must be attributed to their specific regional variety.
+   - **Cultural Sensitivity:** Entries involving sacred rituals (e.g., *Chomangkan*), death rites, deity veneration, or traditional taboos must be routed for community elder consultation before changes are merged.
+4. **Audit Trail Preservation:**
    - Approved reviews are recorded as `GlossReviewRecord` objects in the entry's provenance.
    - Status elevation to `is_verified=True` occurs only when an `accepted` or `corrected` review has verified reviewer attribution and valid date/locator metadata.
-4. **Preserving Safeguards:**
+5. **Preserving Safeguards:**
    - Until a candidate gloss is formally reviewed, it must remain `is_verified=False`.
    - `verified_only=True` queries must continue to exclude all unverified glosses.
 
 ---
 
-## 5. How to Submit
+## 5. Validating and Submitting Reviews
 
-1. Download or copy `docs/community_gloss_review_template.csv`.
-2. Add your reviews and corrections.
-3. Submit the completed CSV via a GitHub Issue or Pull Request to the project repository:
+Review submissions can be validated directly before submission using the built-in CLI:
+
+```bash
+karbi validate --review-csv docs/community_gloss_review_template.csv
+```
+
+Or via Python:
+```python
+import karbi
+
+result = karbi.validate_community_review_csv("docs/community_gloss_review_template.csv")
+print(result.report())
+```
+
+### Submission Steps:
+1. Copy `docs/community_gloss_review_template.csv`.
+2. Add your reviews, corrections, and preferred attribution.
+3. Run `karbi validate --review-csv <your_file.csv>` to ensure syntax, IDs, and dates are valid.
+4. Submit the completed CSV via a GitHub Issue or Pull Request to:
    `https://github.com/researchbuimb24-spec/Karbi-Assam-Lang-Python-Library`
-4. The project maintainers will validate the CSV format, run the test suite, and incorporate accepted reviews into the official dataset releases.

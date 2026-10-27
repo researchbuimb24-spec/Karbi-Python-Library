@@ -1,0 +1,14 @@
+{
+  "book_id": "indian_fairy_tales",
+  "canonical_title": "Indian Fairy Tales",
+  "source_file_path": "data/books/texts/indian_fairy_tales.jsonl",
+  "sha256_checksum": "cf24a763c0ef29528237d9a8b0ed7e9617c68ee72a5a9015955dcb578f0ba0ee",
+  "total_chapters": 29,
+  "total_passages": 1032,
+  "language": "en",
+  "import_timestamp": "2026-10-26T13:57:26.747746+00:00",
+  "licence": "Public Domain (US, UK, EU, India; compiler deceased >70 years; published 1892)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Complete collection of all 29 traditional Indian fairy tales compiled and edited by Joseph Jacobs (1892). Contains 1,032 folklore prose paragraphs."
+}

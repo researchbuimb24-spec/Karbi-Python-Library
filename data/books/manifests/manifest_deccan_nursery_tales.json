@@ -1,0 +1,14 @@
+{
+  "book_id": "deccan_nursery_tales",
+  "canonical_title": "Deccan Nursery Tales",
+  "source_file_path": "data/books/texts/deccan_nursery_tales.jsonl",
+  "sha256_checksum": "71ca373f386491bfd7f3534da7250b663970b2a93e4a441218cde06342c38887",
+  "total_chapters": 20,
+  "total_passages": 72,
+  "language": "en",
+  "import_timestamp": "2026-10-27T14:38:48.662252+00:00",
+  "licence": "Public Domain (Project Gutenberg eBook #11167)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 72 passages across 20 structural units from Project Gutenberg."
+}

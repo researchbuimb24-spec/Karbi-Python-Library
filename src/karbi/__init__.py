@@ -30,8 +30,23 @@ from karbi.api import (
     batch_lookup,
     batch_search,
     batch_translate,
+    get_book,
+    get_book_chapters,
+    get_book_metadata,
+    get_book_passages,
+    get_book_statistics,
+    get_passage,
+    import_book,
+    list_books,
     search,
+    search_book_text,
+    search_books,
+    validate_book,
     validate_dataset,
+)
+from karbi.core.review import (
+    CommunityReviewValidationResult,
+    validate_community_review_csv,
 )
 from karbi.cli import main as cli_main
 from karbi.dictionary import DictionaryEntry, lookup, lookup_all
@@ -61,7 +76,9 @@ __all__ = [
     "batch_lookup",
     "batch_translate",
     "validate_dataset",
+    "validate_community_review_csv",
     "DatasetValidationResult",
+    "CommunityReviewValidationResult",
     "SearchResult",
     # Multilingual-to-Karbi Translation
     "translate",
@@ -86,4 +103,16 @@ __all__ = [
     "get_rituals",
     "get_deities",
     "get_cultural_ethics_policy",
+    # Digital Book Library API
+    "list_books",
+    "get_book",
+    "get_book_metadata",
+    "get_book_chapters",
+    "get_passage",
+    "get_book_passages",
+    "search_books",
+    "search_book_text",
+    "import_book",
+    "validate_book",
+    "get_book_statistics",
 ]

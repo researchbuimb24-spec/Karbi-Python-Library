@@ -1,0 +1,14 @@
+{
+  "book_id": "shakuntala",
+  "canonical_title": "Shakuntala (Abhijnanasakuntala)",
+  "source_file_path": "data/books/texts/shakuntala.jsonl",
+  "sha256_checksum": "d3bef08ac46f790eced0a98b3f2ff5b6b1b9654d9e22042cb2657fcead307667",
+  "total_chapters": 7,
+  "total_passages": 1380,
+  "language": "sa",
+  "import_timestamp": "2026-10-27T12:47:19.151305+00:00",
+  "licence": "Public Domain (US, UK, EU, India; translator deceased >70 years; published 1912)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Complete translation of Kālidāsa's 7-act classical Sanskrit drama by Arthur W. Ryder (1912, Project Gutenberg eBook #16659). Contains 1380 dramatic dialogue and prose passages across all 7 acts."
+}

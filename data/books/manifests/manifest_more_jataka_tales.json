@@ -1,0 +1,14 @@
+{
+  "book_id": "more_jataka_tales",
+  "canonical_title": "More Jataka Tales",
+  "source_file_path": "data/books/texts/more_jataka_tales.jsonl",
+  "sha256_checksum": "bca26cb1e5227dea48330adeabc7de974bb44f0eba6ca288ab22be47aac7bd89",
+  "total_chapters": 21,
+  "total_passages": 364,
+  "language": "en",
+  "import_timestamp": "2026-10-27T14:38:48.662252+00:00",
+  "licence": "Public Domain (Project Gutenberg eBook #7518)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 364 passages across 21 structural units from Project Gutenberg."
+}

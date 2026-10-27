@@ -7,10 +7,13 @@ import json
 import subprocess
 import sys
 from io import StringIO
+from pathlib import Path
 from typing import List
 
 import pytest
 from karbi.cli import build_parser, main
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 
 def run_cli_capture(args: List[str]) -> tuple[int, str, str]:
@@ -233,3 +236,49 @@ class TestCommandLineInterface:
         assert ret_t == 0
         assert "KB-LEX-0000154" in out_t or "to eat" in out_t
         assert "axe" in out_t or "hatchet" in out_t
+
+    def test_cli_search_verified_only_finds_attested_entry(self):
+        """karbi search <word> --verified-only successfully finds source-attested entries."""
+        ret, out, err = run_cli_capture(["search", "arlèng", "--verified-only"])
+        assert ret == 0
+        assert "KARBI HEADWORD: arlèng" in out
+        assert "/aɾˈlɛŋ/" in out
+
+    def test_cli_search_verified_only_excludes_citation_mismatch(self):
+        """karbi search <word> --verified-only excludes citation-mismatch records."""
+        ret, out, err = run_cli_capture(["search", "kāthē", "--verified-only"])
+        assert ret == 1
+        assert "No matching Karbi entries found for 'kāthē'" in err
+
+    def test_cli_lookup_verified_only_finds_attested_and_excludes_mismatch(self):
+        """karbi lookup --verified-only finds attested words but excludes citation-mismatches."""
+        # Attested word finds entry
+        ret_ok, out_ok, _ = run_cli_capture(["lookup", "arlèng", "--verified-only"])
+        assert ret_ok == 0
+        assert "KARBI HEADWORD: arlèng" in out_ok
+
+        # Citation-mismatch entry is excluded
+        ret_mismatch, _, err_mismatch = run_cli_capture(["lookup", "kāthē", "--verified-only"])
+        assert ret_mismatch == 1
+        assert "No Karbi dictionary entry found for: 'kāthē' (verified only)" in err_mismatch
+
+    def test_cli_validate_review_csv(self):
+        """karbi validate --review-csv audits community submissions."""
+        template_path = str(PROJECT_ROOT / "docs" / "community_gloss_review_template.csv")
+        ret, out, _ = run_cli_capture(["validate", "--review-csv", template_path])
+        assert ret == 0
+        assert "KARBI COMMUNITY REVIEW SUBMISSION AUDIT REPORT" in out
+        assert "PASSED [VALID]" in out
+        assert "Total Submissions:          0 (Header-only template)" in out
+        assert "Review Decisions Breakdown:" in out
+
+    def test_cli_validate_review_csv_json(self):
+        """karbi validate --review-csv --json outputs structured validation report."""
+        template_path = str(PROJECT_ROOT / "docs" / "community_gloss_review_template.csv")
+        ret, out, _ = run_cli_capture(["validate", "--review-csv", template_path, "--json"])
+        assert ret == 0
+        data = json.loads(out)
+        assert data["is_valid"] is True
+        assert data["submissions_count"] == 0
+        assert data["is_empty_template"] is True
+        assert "submissions" in data

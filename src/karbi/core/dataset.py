@@ -56,6 +56,11 @@ class DatasetValidationResult:
     ai_candidate_entries: List[str] = field(default_factory=list)
     unverified_glosses_count: int = 0
     unverified_glosses_by_lang: Dict[str, int] = field(default_factory=dict)
+    verified_glosses_count: int = 0
+    verified_glosses_by_lang: Dict[str, int] = field(default_factory=dict)
+    total_glosses_count: int = 0
+    total_glosses_by_lang: Dict[str, int] = field(default_factory=dict)
+    citation_mismatch_entries: List[str] = field(default_factory=list)
 
     def summary(self) -> str:
         status_text = "PASSED" if self.is_valid else "FAILED"
@@ -82,9 +87,14 @@ class DatasetValidationResult:
             "files_scanned": self.files_scanned,
             "status_counts": self.status_counts,
             "missing_citation_entries": self.missing_citation_entries,
+            "citation_mismatch_entries": self.citation_mismatch_entries,
             "ai_candidate_entries": self.ai_candidate_entries,
             "unverified_glosses_count": self.unverified_glosses_count,
             "unverified_glosses_by_lang": self.unverified_glosses_by_lang,
+            "verified_glosses_count": self.verified_glosses_count,
+            "verified_glosses_by_lang": self.verified_glosses_by_lang,
+            "total_glosses_count": self.total_glosses_count,
+            "total_glosses_by_lang": self.total_glosses_by_lang,
         }
 
     def report(self, verbose: bool = False) -> str:
@@ -111,8 +121,22 @@ class DatasetValidationResult:
         if self.missing_citation_entries and verbose:
             lines.append(f"    Missing IDs: {', '.join(self.missing_citation_entries[:10])}")
 
+        if self.citation_mismatch_entries:
+            lines.append(f"  • Citation-mismatch entries:  {len(self.citation_mismatch_entries):>5}")
+            if verbose:
+                lines.append(f"    Mismatch IDs: {', '.join(self.citation_mismatch_entries)}")
+
         lines.append("")
         lines.append("Translation Verification Audit:")
+        if self.total_glosses_count > 0:
+            lines.append(f"  • Total Definitions/Glosses:  {self.total_glosses_count:>5}")
+            ver_pct = (self.verified_glosses_count / self.total_glosses_count * 100)
+            lines.append(f"  • Verified Glosses:           {self.verified_glosses_count:>5} ({ver_pct:.1f}%)")
+            for l_code in sorted(self.total_glosses_by_lang.keys()):
+                v_cnt = self.verified_glosses_by_lang.get(l_code, 0)
+                t_cnt = self.total_glosses_by_lang.get(l_code, 0)
+                l_pct = (v_cnt / t_cnt * 100) if t_cnt > 0 else 0
+                lines.append(f"    - Language '{l_code}':       {v_cnt:>5} / {t_cnt:>5} verified ({l_pct:.1f}%)")
         lines.append(f"  • Total Unverified Glosses:   {self.unverified_glosses_count:>5}")
         for l_code, count in sorted(self.unverified_glosses_by_lang.items()):
             lines.append(f"    - Language '{l_code}':       {count:>5} unverified glosses")
@@ -263,9 +287,14 @@ class DatasetValidator:
 
         status_counts: Dict[str, int] = {}
         missing_citation_entries: List[str] = []
+        citation_mismatch_entries: List[str] = []
         ai_candidate_entries: List[str] = []
         unverified_glosses_by_lang: Dict[str, int] = {}
         unverified_glosses_count = 0
+        verified_glosses_by_lang: Dict[str, int] = {}
+        verified_glosses_count = 0
+        total_glosses_by_lang: Dict[str, int] = {}
+        total_glosses_count = 0
 
         for rec in lexicon_records:
             entry_data = rec.data
@@ -275,6 +304,8 @@ class DatasetValidator:
 
             if status == "AI_CANDIDATE":
                 ai_candidate_entries.append(entry_id)
+            elif status == "CITATION_MISMATCH":
+                citation_mismatch_entries.append(entry_id)
 
             prov = entry_data.get("provenance", {})
             evidence = prov.get("evidence_records", []) if isinstance(prov, dict) else []
@@ -290,12 +321,17 @@ class DatasetValidator:
                         prov_label = str(gloss_prov.get(lang_code, "")).lower()
                         if isinstance(items, list):
                             for item in items:
+                                total_glosses_count += 1
+                                total_glosses_by_lang[lang_code] = total_glosses_by_lang.get(lang_code, 0) + 1
                                 is_ver = False
                                 if isinstance(item, dict):
                                     is_ver = item.get("verified", False) is True
                                 elif isinstance(item, str):
                                     is_ver = prov_label in ("source_attested", "verified", "peer_reviewed")
-                                if not is_ver:
+                                if is_ver:
+                                    verified_glosses_count += 1
+                                    verified_glosses_by_lang[lang_code] = verified_glosses_by_lang.get(lang_code, 0) + 1
+                                else:
                                     unverified_glosses_count += 1
                                     unverified_glosses_by_lang[lang_code] = unverified_glosses_by_lang.get(lang_code, 0) + 1
 
@@ -415,9 +451,14 @@ class DatasetValidator:
             files_scanned=files_scanned,
             status_counts=status_counts,
             missing_citation_entries=missing_citation_entries,
+            citation_mismatch_entries=citation_mismatch_entries,
             ai_candidate_entries=ai_candidate_entries,
             unverified_glosses_count=unverified_glosses_count,
             unverified_glosses_by_lang=unverified_glosses_by_lang,
+            verified_glosses_count=verified_glosses_count,
+            verified_glosses_by_lang=verified_glosses_by_lang,
+            total_glosses_count=total_glosses_count,
+            total_glosses_by_lang=total_glosses_by_lang,
         )
 
 

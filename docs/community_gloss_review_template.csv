@@ -1,4 +1,1 @@
-entry_id,source_language,source_word,proposed_karbi_form,proposed_gloss,source_evidence,reviewer_name_or_pseudonym,dialect_or_community,decision,correction,notes,review_date
-KB-LEX-0000001,hi,मनुष्य,arlèng,मनुष्य,Native speaker usage (Rongkhang),Reviewer Pseudonym,Rongkhang,accepted,,Accurate Hindi equivalent for human/man,2026-10-23
-KB-LEX-0000001,as,মানুহ,arlèng,মানুহ,Native speaker usage (Chinthong),Reviewer Pseudonym,Chinthong,accepted,,Standard Assamese gloss for arleng,2026-10-23
-KB-LEX-0000382,en,squirrel,kārlē-sārpō,large squirrel,Stack & Lyall (1908) p. 88,Reviewer Pseudonym,Historical,corrected,kārlē-sārpō,Replaces corrupted kāthē headword with authentic compound from Story of a Frog,2026-10-23
+entry_id,source_language,source_word,proposed_karbi_form,proposed_gloss,source_evidence,reviewer_name_or_pseudonym,reviewer_consent_or_attribution,dialect_or_community,decision,correction,notes,review_date

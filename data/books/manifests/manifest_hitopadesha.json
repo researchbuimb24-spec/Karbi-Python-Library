@@ -1,0 +1,14 @@
+{
+  "book_id": "hitopadesha",
+  "canonical_title": "The Hitopadesha (The Book of Good Counsels)",
+  "source_file_path": "data/books/texts/hitopadesha.jsonl",
+  "sha256_checksum": "641fc9c319ccfc9f9f0c1378586c69160358806aa6a1ff85967360504679b46d",
+  "total_chapters": 5,
+  "total_passages": 1060,
+  "language": "sa",
+  "import_timestamp": "2026-10-26T13:52:04.870490+00:00",
+  "licence": "Public Domain (US, UK, EU, India; translator deceased >70 years; published 1861)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 1060 narrative passages across 5 chapters. 20 translator endnotes preserved in annotations/annotations_hitopadesha.json."
+}

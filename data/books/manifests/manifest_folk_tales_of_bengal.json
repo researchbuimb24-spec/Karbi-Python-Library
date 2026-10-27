@@ -1,0 +1,14 @@
+{
+  "book_id": "folk_tales_of_bengal",
+  "canonical_title": "Folk-Tales of Bengal",
+  "source_file_path": "data/books/texts/folk_tales_of_bengal.jsonl",
+  "sha256_checksum": "c1c25d18b0755c88fafc398b0f02b05165b300b4b6566871eb8dcb356ff72b6d",
+  "total_chapters": 22,
+  "total_passages": 294,
+  "language": "bn",
+  "import_timestamp": "2026-10-27T12:47:15.857432+00:00",
+  "licence": "Public Domain (Project Gutenberg eBook #38488)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Complete collection of all 22 traditional Bengali folktales compiled by Rev. Lal Behari Day (1883). Contains 294 folklore prose passages; 47 scholarly endnotes preserved in annotations/annotations_folk_tales_of_bengal.json."
+}

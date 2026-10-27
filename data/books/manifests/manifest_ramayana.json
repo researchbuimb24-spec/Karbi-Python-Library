@@ -1,0 +1,14 @@
+{
+  "book_id": "ramayana",
+  "canonical_title": "The Ramayana of Valmiki",
+  "source_file_path": "data/books/texts/ramayana.jsonl",
+  "sha256_checksum": "4797b4dde776af9665e798c011b14785365e810b4a542d9f5696b75425b5e887",
+  "total_chapters": 493,
+  "total_passages": 1843,
+  "language": "sa",
+  "import_timestamp": "2026-10-26T13:50:08.701430+00:00",
+  "licence": "Public Domain (US, UK, EU, India; translator deceased >70 years; published 1870-1874)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Complete import of the included content of the specified Griffith edition (Bala, Ayodhya, Aranya, Kishkindha, Sundara, and Yuddha Kandas; 493 cantos, 1,843 stanzas); not a complete representation of every traditional Ramayana recension (omits Uttara Kanda, which was excluded by the translator)."
+}
