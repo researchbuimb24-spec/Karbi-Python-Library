@@ -1,0 +1,2071 @@
+[
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0001",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 1,
+    "page_number": 75,
+    "target_passage_id": "PASS-NEIGHBOR1878-75-001",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Ne ludak ningkan isibak do p6.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0002",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 2,
+    "page_number": 75,
+    "target_passage_id": "PASS-NEIGHBOR1878-75-002",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La kopi kang-hoy 16 ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0003",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 3,
+    "page_number": 75,
+    "target_passage_id": "PASS-NEIGHBOR1878-75-003",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Netum nonke labangso akam apotsi pu p6.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0004",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 4,
+    "page_number": 75,
+    "target_passage_id": "PASS-NEIGHBOR1878-75-004",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "\\o ^tumke ne phu athak ingjar p6.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0005",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 5,
+    "page_number": 75,
+    "target_passage_id": "PASS-NEIGHBOR1878-75-005",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Ld ne ingtondet 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0006",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 6,
+    "page_number": 75,
+    "target_passage_id": "PASS-NEIGHBOR1878-75-006",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La apotsi ne dam tang-16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0008",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 8,
+    "page_number": 75,
+    "target_passage_id": "PASS-NEIGHBOR1878-75-008",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ne lakha pemesen tang-16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0010",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 10,
+    "page_number": 75,
+    "target_passage_id": "PASS-NEIGHBOR1878-75-010",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Ne se hari 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0011",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 11,
+    "page_number": 75,
+    "target_passage_id": "PASS-NEIGHBOR1878-75-011",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Lang-royso athak th^ngpi arong nang klibup 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0012",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 12,
+    "page_number": 75,
+    "target_passage_id": "PASS-NEIGHBOR1878-75-012",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Thengpi athe ne ri athak nang kl6 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0013",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 13,
+    "page_number": 75,
+    "target_passage_id": "PASS-NEIGHBOR1878-75-013",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Thengpi arong tovar nang kli par-pnn-pet 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0015",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 15,
+    "page_number": 76,
+    "target_passage_id": "PASS-NEIGHBOR1878-76-015",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La ing-le arong heloving thek-si katvir-det 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0016",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 16,
+    "page_number": 76,
+    "target_passage_id": "PASS-NEIGHBOR1878-76-016",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Nang phere-det 16 ma ? Phere nang-ne.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0017",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 17,
+    "page_number": 76,
+    "target_passage_id": "PASS-NEIGHBOR1878-76-017",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Tom.on kej dp-si ne pliere duk 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0018",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 18,
+    "page_number": 76,
+    "target_passage_id": "PASS-NEIGHBOR1878-76-018",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La keri aphi-si long 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0019",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 19,
+    "page_number": 76,
+    "target_passage_id": "PASS-NEIGHBOR1878-76-019",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Labangs6 alam nang mo-aphi-le n^ than non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0020",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 20,
+    "page_number": 76,
+    "target_passage_id": "PASS-NEIGHBOR1878-76-020",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Vang-thu ri non. La pu voy-phak 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0021",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 21,
+    "page_number": 76,
+    "target_passage_id": "PASS-NEIGHBOR1878-76-021",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Telong bng-le ph6-tang 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0022",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 22,
+    "page_number": 76,
+    "target_passage_id": "PASS-NEIGHBOR1878-76-022",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Nang kedo-an van pet 16 ma ? Tangte dam-thu non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0023",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 23,
+    "page_number": 76,
+    "target_passage_id": "PASS-NEIGHBOR1878-76-023",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Badu arlengta thi p6. Badu arlengta thi-ndng ji.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0024",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 24,
+    "page_number": 76,
+    "target_passage_id": "PASS-NEIGHBOR1878-76-024",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Losiiii nang kopi kang-hoy ma ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0025",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 25,
+    "page_number": 76,
+    "target_passage_id": "PASS-NEIGHBOR1878-76-025",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Sok kedo-kave ik-tang 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0026",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 26,
+    "page_number": 76,
+    "target_passage_id": "PASS-NEIGHBOR1878-76-026",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La thi-ji dokdok 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0027",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 27,
+    "page_number": 76,
+    "target_passage_id": "PASS-NEIGHBOR1878-76-027",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Nang thangnat-ne lang ma ? Ne thangthe lang.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0028",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 28,
+    "page_number": 76,
+    "target_passage_id": "PASS-NEIGHBOR1878-76-028",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La ingnut-pet-si do. Ne inut-pet-si kedam 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0029",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 29,
+    "page_number": 76,
+    "target_passage_id": "PASS-NEIGHBOR1878-76-029",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Ar6 angbong karle ejon do.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0030",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 30,
+    "page_number": 76,
+    "target_passage_id": "PASS-NEIGHBOR1878-76-030",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Badu ahem apdrta la ahem thenei 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0031",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 31,
+    "page_number": 76,
+    "target_passage_id": "PASS-NEIGHBOR1878-76-031",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "N6 akimi klem-thu p6.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0032",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 32,
+    "page_number": 77,
+    "target_passage_id": "PASS-NEIGHBOR1878-77-032",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "N^ h^m komdne niing- lut lu mu?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0034",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 34,
+    "page_number": 77,
+    "target_passage_id": "PASS-NEIGHBOR1878-77-034",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Arleng- abiing- plmtii cheke phili pi non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0035",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 35,
+    "page_number": 77,
+    "target_passage_id": "PASS-NEIGHBOR1878-77-035",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Ne nang morom nang kroy 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0037",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 37,
+    "page_number": 77,
+    "target_passage_id": "PASS-NEIGHBOR1878-77-037",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Nang therdk-re ma ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0038",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 38,
+    "page_number": 77,
+    "target_passage_id": "PASS-NEIGHBOR1878-77-038",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La kam keklem pemethek uu-ansi klem 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0039",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 39,
+    "page_number": 77,
+    "target_passage_id": "PASS-NEIGHBOR1878-77-039",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La kekat un-ansi kat 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0040",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 40,
+    "page_number": 77,
+    "target_passage_id": "PASS-NEIGHBOR1878-77-040",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La rech6 asontot alam-si ning-je 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0041",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 41,
+    "page_number": 77,
+    "target_passage_id": "PASS-NEIGHBOR1878-77-041",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La sok kenam-jisi sika phili nang hang 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0042",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 42,
+    "page_number": 77,
+    "target_passage_id": "PASS-NEIGHBOR1878-77-042",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Halatum labaugs6 alam arju-si maiig-hu phrc/iig 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0043",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 43,
+    "page_number": 77,
+    "target_passage_id": "PASS-NEIGHBOR1878-77-043",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ing-hap adung kechohang abang do.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0044",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 44,
+    "page_number": 77,
+    "target_passage_id": "PASS-NEIGHBOR1878-77-044",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Hala ing-le arong akeng-risi arjap 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0045",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 45,
+    "page_number": 77,
+    "target_passage_id": "PASS-NEIGHBOR1878-77-045",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Halabangs6 akam ne kl^m une cheiuinam.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0046",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 46,
+    "page_number": 77,
+    "target_passage_id": "PASS-NEIGHBOR1878-77-046",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Latum kadi9-kave thur-pak 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0047",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 47,
+    "page_number": 77,
+    "target_passage_id": "PASS-NEIGHBOR1878-77-047",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Thura, kam kl^m non. Lii pon nou.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0048",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 48,
+    "page_number": 77,
+    "target_passage_id": "PASS-NEIGHBOR1878-77-048",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Nd n6 m^k prang-pr^.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0049",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 49,
+    "page_number": 77,
+    "target_passage_id": "PASS-NEIGHBOR1878-77-049",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Hem kikim-ji aphan k^pho ri non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0050",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 50,
+    "page_number": 78,
+    "target_passage_id": "PASS-NEIGHBOR1878-78-050",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Hala ton van p6 ma?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0051",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 51,
+    "page_number": 78,
+    "target_passage_id": "PASS-NEIGHBOR1878-78-051",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Alangli (in respectful address) rong asar plang-jisi kang-tung.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0052",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 52,
+    "page_number": 78,
+    "target_passage_id": "PASS-NEIGHBOR1878-78-052",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Labangso iirleng angcham do-tang 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0054",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 54,
+    "page_number": 78,
+    "target_passage_id": "PASS-NEIGHBOR1878-78-054",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ne nang diyah nang kachihang-jisi k^vang 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0055",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 55,
+    "page_number": 78,
+    "target_passage_id": "PASS-NEIGHBOR1878-78-055",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ne penapsi ne hem chi-kim p6.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0056",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 56,
+    "page_number": 78,
+    "target_passage_id": "PASS-NEIGHBOR1878-78-056",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ing-long aphi (or - \"halathu\") cheloug ejon do.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0057",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 57,
+    "page_number": 78,
+    "target_passage_id": "PASS-NEIGHBOR1878-78-057",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Lei alang-li aphi aphisi dun 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0058",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 58,
+    "page_number": 78,
+    "target_passage_id": "PASS-NEIGHBOR1878-78-058",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Nang pider tang 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0059",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 59,
+    "page_number": 78,
+    "target_passage_id": "PASS-NEIGHBOR1878-78-059",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Halake ne telong. Ne la kroy-kre.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0061",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 61,
+    "page_number": 78,
+    "target_passage_id": "PASS-NEIGHBOR1878-78-061",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Halabangso ahem aparta labangs6 ahem m^mu.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0063",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 63,
+    "page_number": 78,
+    "target_passage_id": "PASS-NEIGHBOR1878-78-063",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Lang-roy ing-long hini adaksi li 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0064",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 64,
+    "page_number": 78,
+    "target_passage_id": "PASS-NEIGHBOR1878-78-064",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Labangso ahem kekim dnam sika ingkoy 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0065",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 65,
+    "page_number": 78,
+    "target_passage_id": "PASS-NEIGHBOR1878-78-065",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Nang kelet-par 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0067",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 67,
+    "page_number": 78,
+    "target_passage_id": "PASS-NEIGHBOR1878-78-067",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Nonke temon k^jap.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0068",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 68,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-068",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Lang ar-kbk 16 ma ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0069",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 69,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-069",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Labangso titar 116 koth^k pdth^si thip p6 ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0070",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 70,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-070",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "N^ n^ ik hang- 16, bonta alang- vaugv^-ddt.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0071",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 71,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-071",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Halatum lajokta ot-16, bonta rung un^-ddt.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0072",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 72,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-072",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La tov^r akungsi ingni-susi do.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0073",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 73,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-073",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Netum tovar-1^ dam p6 ma t^bng p^n-1^ dam p6 mi ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0074",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 74,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-074",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "La vang serak p6.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0075",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 75,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-075",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Labangso arleng akeng-sarti bih^k.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0076",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 76,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-076",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Nang lang vek th^k ma ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0077",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 77,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-077",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ladak-le telong pevan non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0078",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 78,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-078",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La kopi athe ? N^ ath^ thek-th^.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0079",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 79,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-079",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Kaphango jike 0 non, tangt^ mo-aphi p^mes^n non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0080",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 80,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-080",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Lang kachething 1^.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0081",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 81,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-081",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Labangs6 lipe kopi acham ? Lck-hik.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0082",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 82,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-082",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Nang chu ching-sok non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0083",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 83,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-083",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La k^ning-jtl alingta n6 kroy-krd.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0084",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 84,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-084",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ladak kayta hori vdr-pi.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0085",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 85,
+    "page_number": 79,
+    "target_passage_id": "PASS-NEIGHBOR1878-79-085",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Telyng arj6 an^rl6 ddm ver pi.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0086",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 86,
+    "page_number": 80,
+    "target_passage_id": "PASS-NEIGHBOR1878-80-086",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Alang thi tang-16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0087",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 87,
+    "page_number": 80,
+    "target_passage_id": "PASS-NEIGHBOR1878-80-087",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Sang- ador so-ong.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0088",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 88,
+    "page_number": 80,
+    "target_passage_id": "PASS-NEIGHBOR1878-80-088",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "N^ uing kachidok ajirpo.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0089",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 89,
+    "page_number": 80,
+    "target_passage_id": "PASS-NEIGHBOR1878-80-089",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "'N6 sika kep choram tang-le ; ne la pi tang-16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0091",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 91,
+    "page_number": 80,
+    "target_passage_id": "PASS-NEIGHBOR1878-80-091",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La hiui kopi-si kaprek ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0094",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 94,
+    "page_number": 80,
+    "target_passage_id": "PASS-NEIGHBOR1878-80-094",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Nang an cho tang-16 ma ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0095",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 95,
+    "page_number": 80,
+    "target_passage_id": "PASS-NEIGHBOR1878-80-095",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Non puta n^ kam tangte im lang. Tang tang-16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0096",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 96,
+    "page_number": 80,
+    "target_passage_id": "PASS-NEIGHBOR1878-80-096",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La ing-long pensi nang hir tang-16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0097",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 97,
+    "page_number": 80,
+    "target_passage_id": "PASS-NEIGHBOR1878-80-097",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Penap adaprang-le vang non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0098",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 98,
+    "page_number": 80,
+    "target_passage_id": "PASS-NEIGHBOR1878-80-098",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ne ch6-detsi vang voy-phak p6.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0099",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 99,
+    "page_number": 80,
+    "target_passage_id": "PASS-NEIGHBOR1878-80-099",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Nang labangs6 akam klem non; ma tangte arleng kaprek hang ncn.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0100",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 100,
+    "page_number": 80,
+    "target_passage_id": "PASS-NEIGHBOR1878-80-100",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ne kam aphan arleng dor-de.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0101",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 101,
+    "page_number": 80,
+    "target_passage_id": "PASS-NEIGHBOR1878-80-101",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La an tun tang-16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0102",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 102,
+    "page_number": 80,
+    "target_passage_id": "PASS-NEIGHBOR1878-80-102",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ningvejo pang-tang hon vdr non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0103",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 103,
+    "page_number": 80,
+    "target_passage_id": "PASS-NEIGHBOR1878-80-103",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Pachingbar-rira sika von non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0104",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 104,
+    "page_number": 81,
+    "target_passage_id": "PASS-NEIGHBOR1878-81-104",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Mbangso iitheni,'-i)i apUlak peiiei tliu uon.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0105",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 105,
+    "page_number": 81,
+    "target_passage_id": "PASS-NEIGHBOR1878-81-105",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Nang ami kevangta melur jaiig-thu pi uuug ji.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0107",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 107,
+    "page_number": 81,
+    "target_passage_id": "PASS-NEIGHBOR1878-81-107",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ldbangso arleng auing- kithikon 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0108",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 108,
+    "page_number": 81,
+    "target_passage_id": "PASS-NEIGHBOR1878-81-108",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Nang mek kypi chiphing-det 16 ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0109",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 109,
+    "page_number": 81,
+    "target_passage_id": "PASS-NEIGHBOR1878-81-109",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Halabangso ahem heloving mji ; tebok-h^t ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0111",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 111,
+    "page_number": 81,
+    "target_passage_id": "PASS-NEIGHBOR1878-81-111",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La-an piiserong-ra, lam nmg-jc ri. _",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0112",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 112,
+    "page_number": 81,
+    "target_passage_id": "PASS-NEIGHBOR1878-81-112",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "LaLangs6 atibuk king pipleng non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0113",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 113,
+    "page_number": 81,
+    "target_passage_id": "PASS-NEIGHBOR1878-81-113",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La theso kedok-atum m^sense ma ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0114",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 114,
+    "page_number": 81,
+    "target_passage_id": "PASS-NEIGHBOR1878-81-114",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ne j)e pliirso nam-jisi kangtung.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0115",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 115,
+    "page_number": 81,
+    "target_passage_id": "PASS-NEIGHBOR1878-81-115",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Nang la hem me pe-ch6 p6.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0116",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 116,
+    "page_number": 81,
+    "target_passage_id": "PASS-NEIGHBOR1878-81-116",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Hala niing hithi kedam-ji nang- khaug-det.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0117",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 117,
+    "page_number": 81,
+    "target_passage_id": "PASS-NEIGHBOR1878-81-117",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Aphriing dam rii; toviir lliuii n^'^n.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0118",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 118,
+    "page_number": 81,
+    "target_passage_id": "PASS-NEIGHBOR1878-81-118",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Labangso lilam ne rung asiing-ho pensi karju 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0119",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 119,
+    "page_number": 81,
+    "target_passage_id": "PASS-NEIGHBOR1878-81-119",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Labaugs6 tihemke mihi pensi pleng-top 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0120",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 120,
+    "page_number": 81,
+    "target_passage_id": "PASS-NEIGHBOR1878-81-120",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Mo-aphi iirju p6 pu nang thek-the ma,?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0121",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 121,
+    "page_number": 81,
+    "target_passage_id": "PASS-NEIGHBOR1878-81-121",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "La oso kohe 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0122",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 122,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-122",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Nang kopi long 16 ? Ne \\o jon kre-phongo long 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0123",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 123,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-123",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "N6 melur mep tang-16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0124",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 124,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-124",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Bangs6 lirleng arleng keth^.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0125",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 125,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-125",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La aban ak^-ong pi.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0126",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 126,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-126",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Labangs6 ape vek non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0127",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 127,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-127",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Labangs6 alam keph6 aj)hang adungsi k^klang 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0128",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 128,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-128",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Sining kangder arju 16 ma ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0129",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 129,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-129",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Nano- rono- dam 16 ma ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0130",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 130,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-130",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Nang phu so-det 16 ma ? Ne nang s^ nang arju long-le.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0131",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 131,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-131",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Labangso apira kardik-par ; ne rung un-e.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0132",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 132,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-132",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ne ingjins6-ra ne rap non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0133",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 133,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-133",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "La jok aparta la binei 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0134",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 134,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-134",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Kado-kave aparta kangtui ing-long",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0135",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 135,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-135",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Karnuk-par.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0136",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 136,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-136",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La amethangsi chi-pithi 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0137",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 137,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-137",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ing-hap ingpu non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0138",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 138,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-138",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Nang ni ke-an do ji ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0139",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 139,
+    "page_number": 82,
+    "target_passage_id": "PASS-NEIGHBOR1878-82-139",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Chik-16 ejon ne nang ko-an tangka nang pi-tu ma ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0140",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 140,
+    "page_number": 83,
+    "target_passage_id": "PASS-NEIGHBOR1878-83-140",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Nd an kang'chir par 16, luny tii ki-it pdr lo.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0141",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 141,
+    "page_number": 83,
+    "target_passage_id": "PASS-NEIGHBOR1878-83-141",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "T)oioy uon ! nang- kahori par 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0142",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 142,
+    "page_number": 83,
+    "target_passage_id": "PASS-NEIGHBOR1878-83-142",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "'N^ day nc do-clii-en pu ; ajcira ne diyali n<^^n.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0143",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 143,
+    "page_number": 83,
+    "target_passage_id": "PASS-NEIGHBOR1878-83-143",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Ne ndng k^pn asonle klem nr/n.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0144",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 144,
+    "page_number": 83,
+    "target_passage_id": "PASS-NEIGHBOR1878-83-144",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Tebng arlo kc^miit do ? iXlang- hem arlosi do ma V",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0145",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 145,
+    "page_number": 83,
+    "target_passage_id": "PASS-NEIGHBOR1878-83-145",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Alang a-ik alar kam klem p6.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0146",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 146,
+    "page_number": 83,
+    "target_passage_id": "PASS-NEIGHBOR1878-83-146",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Sahab aban-atum sahab alam kroy-kre-det.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0147",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 147,
+    "page_number": 83,
+    "target_passage_id": "PASS-NEIGHBOR1878-83-147",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ilala lang- var non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0148",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 148,
+    "page_number": 83,
+    "target_passage_id": "PASS-NEIGHBOR1878-83-148",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Labangso arleng- lining sideng-par ma ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0150",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 150,
+    "page_number": 83,
+    "target_passage_id": "PASS-NEIGHBOR1878-83-150",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La achimi keking'kon tangte kere-par.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0151",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 151,
+    "page_number": 83,
+    "target_passage_id": "PASS-NEIGHBOR1878-83-151",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Mar aliugta adim tc/t-totle bi non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0152",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 152,
+    "page_number": 83,
+    "target_passage_id": "PASS-NEIGHBOR1878-83-152",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Siuing kangder. Sining kabirlak. Arve kejang-.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0153",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 153,
+    "page_number": 83,
+    "target_passage_id": "PASS-NEIGHBOR1878-83-153",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Jojat \\o jon phongo pon tang-16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0154",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 154,
+    "page_number": 83,
+    "target_passage_id": "PASS-NEIGHBOR1878-83-154",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Methanso tur-ri.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0155",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 155,
+    "page_number": 83,
+    "target_passage_id": "PASS-NEIGHBOR1878-83-155",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "llaliidak kado-kave ajiit lipi do.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0156",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 156,
+    "page_number": 83,
+    "target_passage_id": "PASS-NEIGHBOR1878-83-156",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Tari nang aeham pidam p6.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0157",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 157,
+    "page_number": 83,
+    "target_passage_id": "PASS-NEIGHBOR1878-83-157",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Hala kopi kepu 16 ne thek-th^.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0158",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 158,
+    "page_number": 84,
+    "target_passage_id": "PASS-NEIGHBOR1878-84-158",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Kado-kave arleiig apavta kevaiig- paphi abang memu.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0159",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 159,
+    "page_number": 84,
+    "target_passage_id": "PASS-NEIGHBOR1878-84-159",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Nang arui vangta kopi kevaug kapeder vei'-et ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0160",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 160,
+    "page_number": 84,
+    "target_passage_id": "PASS-NEIGHBOR1878-84-160",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Adap la-an panerl6-ra i vdr-et ri.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0161",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 161,
+    "page_number": 84,
+    "target_passage_id": "PASS-NEIGHBOR1878-84-161",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "La sarnuug arve kili along aling-le semarthu non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0162",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 162,
+    "page_number": 84,
+    "target_passage_id": "PASS-NEIGHBOR1878-84-162",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ne ko-an chirli p6 ?",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0164",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 164,
+    "page_number": 84,
+    "target_passage_id": "PASS-NEIGHBOR1878-84-164",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "Klem ri pusi ne nang khang bom 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0165",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 165,
+    "page_number": 84,
+    "target_passage_id": "PASS-NEIGHBOR1878-84-165",
+    "uncertainties": [
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Lam ning-je nang ne ; siti det-le pi dam-ra vang non.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0167",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 167,
+    "page_number": 84,
+    "target_passage_id": "PASS-NEIGHBOR1878-84-167",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ne kopusi kang-hoy apot 16 ? Lapu sontot.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0170",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 170,
+    "page_number": 84,
+    "target_passage_id": "PASS-NEIGHBOR1878-84-170",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Ne dam unsi, alang vang tang-I6.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0171",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 171,
+    "page_number": 84,
+    "target_passage_id": "PASS-NEIGHBOR1878-84-171",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK"
+    ],
+    "raw_ocr_karbi": "La kam unansi klem 16, me ta mesen 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  },
+  {
+    "annotation_id": "ANN-NEIGHBOR1878-0172",
+    "book_id": "english_mikir_vocabulary_sentences_1878",
+    "sentence_number": 172,
+    "page_number": 84,
+    "target_passage_id": "PASS-NEIGHBOR1878-84-172",
+    "uncertainties": [
+      "OCR_DIACRITIC_OR_NUMBER_LEAK",
+      "HYPHENATED_COMPOUND_MORPHOLOGY"
+    ],
+    "raw_ocr_karbi": "Dokay-atumke kadokay lihurmu ingnamsi patu 16.",
+    "annotation_type": "transcription_uncertainty",
+    "status": "REQUIRES_SPEAKER_REVIEW"
+  }
+]

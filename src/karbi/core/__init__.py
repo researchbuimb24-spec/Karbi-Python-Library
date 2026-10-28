@@ -3,6 +3,12 @@ Core submodule of the Karbi language library.
 Contains data models, schema validation logic, JSONL loading, and batch dataset validation.
 """
 
+from karbi.core.bilingual import (
+    BilingualEntry,
+    BilingualSourceImporter,
+    LanguageDirection,
+    UncertaintyFlag,
+)
 from karbi.core.dataset import (
     DatasetError,
     DatasetValidationResult,
@@ -62,4 +68,9 @@ __all__ = [
     "DatasetValidationResult",
     "DatasetValidator",
     "validate_dataset_files",
+    # Bilingual Ingestion & Review
+    "BilingualEntry",
+    "BilingualSourceImporter",
+    "LanguageDirection",
+    "UncertaintyFlag",
 ]

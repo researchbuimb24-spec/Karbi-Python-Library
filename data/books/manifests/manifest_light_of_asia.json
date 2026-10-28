@@ -1,0 +1,14 @@
+{
+  "book_id": "light_of_asia",
+  "canonical_title": "The Light of Asia; or, The Great Renunciation",
+  "source_file_path": "data/books/texts/light_of_asia.jsonl",
+  "sha256_checksum": "b98429b28def9b92f25dc9698de6349bd12fd180cd4a126c234ca44ec339ff54",
+  "total_chapters": 8,
+  "total_passages": 298,
+  "language": "en",
+  "import_timestamp": "2026-10-28T06:33:17.328256+00:00",
+  "licence": "Public Domain (US, UK, EU, India; author deceased >70 years; published 1879; global public domain; Project Gutenberg eBook #8920)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 298 passages across 8 chapter(s)."
+}

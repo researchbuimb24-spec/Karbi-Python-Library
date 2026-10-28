@@ -1,0 +1,14 @@
+{
+  "book_id": "aesop_fables",
+  "canonical_title": "Aesop's Fables",
+  "source_file_path": "data/books/texts/aesop_fables.jsonl",
+  "sha256_checksum": "ce249affe2e9ba2518f3c1e144b579b0c55b70e5c0ac8c6bed52251f846053f7",
+  "total_chapters": 284,
+  "total_passages": 373,
+  "language": "grc",
+  "import_timestamp": "2026-10-28T07:36:00.459269+00:00",
+  "licence": "Public Domain (Project Gutenberg eBook #11339)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 373 passages across 284 chapter(s)."
+}

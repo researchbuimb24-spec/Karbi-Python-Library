@@ -1,0 +1,14 @@
+{
+  "book_id": "folktales_of_the_khasis",
+  "canonical_title": "Folk-Tales of the Khasis",
+  "source_file_path": "data/books/texts/folktales_of_the_khasis.jsonl",
+  "sha256_checksum": "e2871c9a72d59fbf988ef0faf1dae7a750b374d48a0c2b6c2c64cdc7a8fb000f",
+  "total_chapters": 32,
+  "total_passages": 486,
+  "language": "en",
+  "import_timestamp": "2026-10-28T06:33:16.114014+00:00",
+  "licence": "Public Domain (US, UK, EU, India; published 1920 >95 years; global public domain; Project Gutenberg eBook #37884)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 486 passages across 32 chapter(s)."
+}

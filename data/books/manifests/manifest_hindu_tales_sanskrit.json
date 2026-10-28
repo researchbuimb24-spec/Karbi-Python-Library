@@ -1,0 +1,14 @@
+{
+  "book_id": "hindu_tales_sanskrit",
+  "canonical_title": "Hindu Tales from the Sanskrit",
+  "source_file_path": "data/books/texts/hindu_tales_sanskrit.jsonl",
+  "sha256_checksum": "d662cb4f0a631c4e68c64ce86142b492f8ba4ab8e6dc36a588b2939085bf1918",
+  "total_chapters": 10,
+  "total_passages": 588,
+  "language": "sa",
+  "import_timestamp": "2026-10-28T08:04:06.082696+00:00",
+  "licence": "Public Domain (Project Gutenberg eBook #11310)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 588 passages across 10 chapter(s)."
+}

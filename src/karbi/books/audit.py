@@ -112,6 +112,8 @@ class BookAuditor:
         self.manifests_dir = self.books_dir / "manifests"
         self.annotations_dir = self.books_dir / "annotations"
         self.sources_file = self.books_dir / "sources.jsonl"
+        repo_root = Path(__file__).resolve().parent.parent.parent.parent
+        self.pub_sources_file = repo_root / "data" / "sources" / "sources.jsonl"
 
     def calculate_sha256(self, file_path: Path) -> str:
         """Calculates SHA-256 of a local file."""
@@ -387,21 +389,106 @@ class BookAuditor:
         elif book_id == "folklore_santal_parganas":
             completeness_stmt = "Complete collection of 185 traditional Santal folktales translated by Cecil Henry Bompas from Dr. P. O. Bodding's collection (1909, Project Gutenberg eBook #11938)."
 
+        elif book_id == "folktales_of_the_khasis":
+            completeness_stmt = "Complete collection of 32 traditional Khasi folk-tales compiled by Mrs. K. U. Rafy (1920, Project Gutenberg eBook #37884)."
+
+        elif book_id == "tales_of_the_sun":
+            if not has_annotations:
+                warnings.append("Tales of the Sun annotations file missing for preserved scholarly footnotes.")
+            completeness_stmt = "Complete collection of South Indian folktales compiled and translated by Pandit S. M. Natesa Sastri and Mrs. Howard Kingscote (1890, Project Gutenberg eBook #37002)."
+
+        elif book_id == "indian_fairy_tales_stokes":
+            if not has_annotations:
+                warnings.append("Indian Fairy Tales (Stokes) annotations file missing for preserved comparative notes.")
+            completeness_stmt = "Complete collection of 30 authentic Indian folk and fairy tales collected and translated by Maive Stokes (1880, Project Gutenberg eBook #31209)."
+
+        elif book_id == "birth_of_war_god":
+            if not has_annotations:
+                warnings.append("The Birth of the War-God annotations file missing for preserved scholarly endnotes.")
+            completeness_stmt = "Complete 7-canto classical Sanskrit Mahākāvya Kumārasambhava by Kālidāsa, translated into English verse by Ralph T. H. Griffith (1879, Project Gutenberg eBook #31968)."
+
+        elif book_id == "mahabharata_dutt":
+            completeness_stmt = "Complete 12-book epic verse translation of the Mahabharata by Romesh Chunder Dutt (1899, Project Gutenberg eBook #19630)."
+
+        elif book_id == "light_of_asia":
+            completeness_stmt = "Complete 8-book Buddhist narrative epic poem depicting the life and teachings of Gautama Buddha by Sir Edwin Arnold (1879, Project Gutenberg eBook #8920)."
+
+        elif book_id == "simla_village_tales":
+            if not has_annotations:
+                warnings.append("Simla Village Tales annotations file missing for preserved endnotes.")
+            completeness_stmt = "Complete collection of 56 traditional Himalayan folktales collected by Alice Elizabeth Dracott (1906, Project Gutenberg eBook #58816); 9 endnotes preserved in annotations."
+
+        elif book_id == "the_kacharis":
+            if not has_annotations:
+                warnings.append("The Kacháris annotations file missing for preserved scholarly footnotes.")
+            completeness_stmt = "Complete ethnographic and linguistic monograph on the Kachári people of Assam by Rev. Sidney Endle and J. D. Anderson (1911, Project Gutenberg eBook #50008), comprising 9 structural units and 231 preserved annotations."
+
+        elif book_id == "twenty_two_goblins":
+            completeness_stmt = "Complete collection of 24 narrative units (Prologue, 22 Goblin puzzle-tales, and Epilogue) translated from the Sanskrit Vetāla tradition by Arthur W. Ryder (1917, Project Gutenberg eBook #2290)."
+
+        elif book_id == "indian_poetry_arnold":
+            if not has_annotations:
+                warnings.append("Indian Poetry annotations file missing for preserved scholarly footnotes.")
+            completeness_stmt = "Complete collection of 22 poetic units translated from classical Sanskrit by Sir Edwin Arnold (1881, Project Gutenberg eBook #25965), including Jayadeva's Gīta Govinda (11 Sargas), Mahābhārata parvas, and Hitopadeśa shlokas; 5 footnotes preserved in annotations."
+
+        elif book_id == "indian_myth_and_legend":
+            if not has_annotations:
+                warnings.append("Indian Myth and Legend annotations file missing for preserved scholarly footnotes.")
+            completeness_stmt = "Complete historical and mythological narrative by Donald Alexander Mackenzie (1913, Project Gutenberg eBook #47228), comprising Introduction and 26 comprehensive chapters; 494 footnotes preserved in annotations."
+
+        elif book_id == "aesop_fables":
+            completeness_stmt = "Complete collection of 284 classic fables and G. K. Chesterton's Introduction, translated by V. S. Vernon Jones (1912, Project Gutenberg eBook #11339)."
+
+        elif book_id == "upanishads":
+            completeness_stmt = "Complete translation and commentary of the Katha, Isa, and Kena Upanishads from the Sanskrit by Swami Paramananda (1919, Project Gutenberg eBook #3283), comprising 15 philosophical units."
+
+        elif book_id == "mahabharata_sabha_parva":
+            completeness_stmt = "Complete Book 2: Sabha Parva in 79 sections (Section I through Section LXXX) translated by Kisari Mohan Ganguli (1883, Project Gutenberg eBook #7965)."
+
+        elif book_id == "tibetan_tales":
+            if not has_annotations:
+                warnings.append("Tibetan Tales annotations file missing for preserved scholarly endnotes.")
+            completeness_stmt = "Complete collection of 51 structural units (Introduction and 50 Buddhist folktales) translated by F. Anton von Schiefner and W. R. S. Ralston (1906, Project Gutenberg eBook #66870); 198 scholarly endnotes preserved in annotations."
+
+        elif book_id == "hindu_tales_sanskrit":
+            if not has_annotations:
+                warnings.append("Hindu Tales from the Sanskrit annotations file missing for preserved endnotes.")
+            completeness_stmt = "Complete collection of 10 structural units (Introductory Note and 9 Sanskrit fables) translated by S. M. Mitra and adapted by Nancy Bell (1919, Project Gutenberg eBook #11310); 2 scholarly endnotes preserved in annotations."
+
+        elif book_id == "mahabharata_virata_parva":
+            if not has_annotations:
+                warnings.append("Mahabharata Virata Parva annotations file missing for preserved footnotes.")
+            completeness_stmt = "Complete Book 4: Virata Parva in 72 sections translated into English prose by Kisari Mohan Ganguli (1883-1896, Project Gutenberg eBook #12058); 56 scholarly footnotes preserved in annotations."
+
+        elif book_id == "english_mikir_vocabulary_sentences_1878":
+            if meta.import_status != BookImportStatus.PARTIALLY_IMPORTED.value:
+                errors.append(f"Neighbor 1878 must be marked PARTIALLY_IMPORTED, currently '{meta.import_status}'")
+            completeness_stmt = "Historical bilingual language text by Rev. R. E. Neighbor (1878, Baptist Mission Press). Partially imported: 172 authentic illustrative bilingual sentences across 10 structural units (Pages 75-84); vocabulary wordlist table in progress awaiting human review."
+
         if not completeness_stmt:
             completeness_stmt = f"Imported {actual_passages} passages across {actual_chapters} structural units."
 
-        # Community consent audit
+        # Source registration & community consent audit
+        source_found = False
         consent_flag = False
-        if self.sources_file.is_file():
-            try:
-                with open(self.sources_file, "r", encoding="utf-8") as sf:
-                    for s_line in sf:
-                        if s_line.strip():
-                            s_obj = json.loads(s_line)
-                            if s_obj.get("source_id") == meta.source_id:
-                                consent_flag = s_obj.get("rights_and_permissions", {}).get("community_consent_verified", False)
-            except Exception:
-                pass
+        for s_file in [self.sources_file, getattr(self, "pub_sources_file", None)]:
+            if s_file and s_file.is_file():
+                try:
+                    with open(s_file, "r", encoding="utf-8") as sf:
+                        for s_line in sf:
+                            if s_line.strip():
+                                s_obj = json.loads(s_line)
+                                sid = s_obj.get("source_id") or s_obj.get("id")
+                                if sid == meta.source_id:
+                                    source_found = True
+                                    consent_flag = s_obj.get("rights_and_permissions", {}).get("community_consent_verified", False)
+                except Exception:
+                    pass
+
+        if not meta.source_id:
+            errors.append("Book metadata is missing required source_id.")
+        elif not source_found:
+            errors.append(f"Source ID '{meta.source_id}' for book '{book_id}' is not registered in sources.jsonl.")
 
         if book_id == "karbi_folktales_1908" and consent_flag:
             errors.append(

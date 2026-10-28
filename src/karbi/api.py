@@ -559,3 +559,15 @@ __all__ = [
     "batch_translate",
     "validate_dataset",
 ]
+
+
+def sync_book_databases(
+    db_paths: Optional[List[Union[str, Path]]] = None,
+    books_dir: Optional[Union[str, Path]] = None,
+) -> Dict[str, Any]:
+    """
+    Synchronizes all imported book JSONL text files on disk into SQLite databases and FTS5 indexes.
+    Default targets: canonical repo root karbi.db and data/karbi.db.
+    """
+    from karbi.books.importer import sync_all_books_to_databases
+    return sync_all_books_to_databases(db_paths=db_paths, books_dir=books_dir)

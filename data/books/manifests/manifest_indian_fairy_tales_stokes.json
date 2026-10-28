@@ -1,0 +1,14 @@
+{
+  "book_id": "indian_fairy_tales_stokes",
+  "canonical_title": "Indian Fairy Tales (Stokes)",
+  "source_file_path": "data/books/texts/indian_fairy_tales_stokes.jsonl",
+  "sha256_checksum": "803ab13051e11158a1cde42bb33055c6a6cb0e936a63f5a14a8be8cc6f74af1b",
+  "total_chapters": 30,
+  "total_passages": 835,
+  "language": "en",
+  "import_timestamp": "2026-10-28T06:33:16.568188+00:00",
+  "licence": "Public Domain (US, UK, EU, India; translator and commentators deceased >70 years; published 1880; global public domain; Project Gutenberg eBook #31209)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 835 passages across 30 chapter(s)."
+}

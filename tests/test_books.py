@@ -468,12 +468,12 @@ def test_public_book_apis():
 
     # Check statistics
     stats = karbi.get_book_statistics()
-    assert stats["total_books"] == 27
-    assert stats["fully_imported_books"] == 17
-    assert stats["partially_imported_books"] == 1
-    assert stats["catalog_only_books"] == 9
-    assert stats["total_imported_passages"] == 16499
-    assert stats["total_imported_chapters"] == 1185
+    assert stats["total_books"] == 42
+    assert stats["fully_imported_books"] == 34
+    assert stats["partially_imported_books"] == 2
+    assert stats["catalog_only_books"] == 6
+    assert stats["total_imported_passages"] == 29947
+    assert stats["total_imported_chapters"] == 1964
 
 
 def test_cli_book_subcommands(capsys):
@@ -528,21 +528,21 @@ def test_book_auditor_all_works():
     auditor = BookAuditor()
     report = auditor.audit_all(write_report=True)
 
-    assert report.total_catalog_works == 27
-    assert report.imported_works_audited == 18
-    assert report.verified_works_count == 17
-    assert report.partially_verified_count == 1  # mahabharata
+    assert report.total_catalog_works == 42
+    assert report.imported_works_audited == 36
+    assert report.verified_works_count == 34
+    assert report.partially_verified_count == 2  # mahabharata + neighbor
     assert report.failed_works_count == 0
-    assert report.not_applicable_count == 9
-    assert report.total_verified_passages == 16499
-    assert report.total_verified_chapters == 1185
+    assert report.not_applicable_count == 6
+    assert report.total_verified_passages == 29947
+    assert report.total_verified_chapters == 1964
 
     # Check that audit report was written to disk
     report_file = auditor.books_dir / "audit_report.json"
     assert report_file.is_file()
     with open(report_file, "r", encoding="utf-8") as f:
         saved_report = json.load(f)
-    assert saved_report["total_verified_passages"] == 16499
+    assert saved_report["total_verified_passages"] == 29947
 
 
 def test_security_tls_verification_enforced():
@@ -845,3 +845,192 @@ def test_big_command_4_imported_books_integrity():
             assert len(p["text"].strip()) > 0
 
 
+def test_big_command_5_imported_books_integrity():
+    """Verify all 6 newly imported authentic works maintain structural integrity, manifest checksums, and db indexing."""
+    repo_root = Path(__file__).resolve().parent.parent
+    books_dir = repo_root / "data" / "books"
+
+    new_books = [
+        ("folktales_of_the_khasis", 32, 486),
+        ("tales_of_the_sun", 31, 834),
+        ("indian_fairy_tales_stokes", 30, 835),
+        ("birth_of_war_god", 7, 72),
+        ("mahabharata_dutt", 12, 2150),
+        ("light_of_asia", 8, 298),
+    ]
+
+    for b_id, expected_ch, expected_pass in new_books:
+        # Check text file
+        t_path = books_dir / "texts" / f"{b_id}.jsonl"
+        assert t_path.is_file(), f"Missing text file for {b_id}"
+
+        # Check manifest file
+        m_path = books_dir / "manifests" / f"manifest_{b_id}.json"
+        assert m_path.is_file(), f"Missing manifest for {b_id}"
+        with open(m_path, "r", encoding="utf-8") as mf:
+            m_obj = json.load(mf)
+        assert m_obj["total_passages"] == expected_pass
+        assert m_obj["total_chapters"] == expected_ch
+
+        # Check passage sequence
+        passages = []
+        with open(t_path, "r", encoding="utf-8") as tf:
+            for line in tf:
+                passages.append(json.loads(line))
+        assert len(passages) == expected_pass
+        for i, p in enumerate(passages, 1):
+            assert p["sequence_number"] == i
+            assert len(p["text"].strip()) > 0
+
+
+def test_big_command_6_imported_books_integrity():
+    """Verify all 5 newly imported authentic works maintain structural integrity, manifest checksums, and db indexing."""
+    repo_root = Path(__file__).resolve().parent.parent
+    books_dir = repo_root / "data" / "books"
+
+    new_books = [
+        ("simla_village_tales", 56, 1088),
+        ("the_kacharis", 9, 648),
+        ("twenty_two_goblins", 24, 651),
+        ("indian_poetry_arnold", 22, 719),
+        ("indian_myth_and_legend", 27, 2058),
+    ]
+
+    for b_id, expected_ch, expected_pass in new_books:
+        # Check text file
+        t_path = books_dir / "texts" / f"{b_id}.jsonl"
+        assert t_path.is_file(), f"Missing text file for {b_id}"
+
+        # Check manifest file
+        m_path = books_dir / "manifests" / f"manifest_{b_id}.json"
+        assert m_path.is_file(), f"Missing manifest for {b_id}"
+        with open(m_path, "r", encoding="utf-8") as mf:
+            m_obj = json.load(mf)
+        assert m_obj["total_passages"] == expected_pass
+        assert m_obj["total_chapters"] == expected_ch
+
+        # Check passage sequence
+        passages = []
+        with open(t_path, "r", encoding="utf-8") as tf:
+            for line in tf:
+                passages.append(json.loads(line))
+        assert len(passages) == expected_pass
+        for i, p in enumerate(passages, 1):
+            assert p["sequence_number"] == i
+            assert len(p["text"].strip()) > 0
+
+
+def test_big_command_7_imported_books_integrity():
+    """Verify newly finished and imported books from catalogue-only maintain full integrity."""
+    repo_root = Path(__file__).resolve().parent.parent
+    books_dir = repo_root / "data" / "books"
+
+    new_books = [
+        ("aesop_fables", 284, 373),
+        ("upanishads", 15, 304),
+    ]
+
+    for b_id, expected_ch, expected_pass in new_books:
+        # Check text file
+        t_path = books_dir / "texts" / f"{b_id}.jsonl"
+        assert t_path.is_file(), f"Missing text file for {b_id}"
+
+        # Check manifest file
+        m_path = books_dir / "manifests" / f"manifest_{b_id}.json"
+        assert m_path.is_file(), f"Missing manifest for {b_id}"
+        with open(m_path, "r", encoding="utf-8") as mf:
+            m_obj = json.load(mf)
+        assert m_obj["total_passages"] == expected_pass
+        assert m_obj["total_chapters"] == expected_ch
+
+        # Check passage sequence
+        passages = []
+        with open(t_path, "r", encoding="utf-8") as tf:
+            for line in tf:
+                passages.append(json.loads(line))
+        assert len(passages) == expected_pass
+        for i, p in enumerate(passages, 1):
+            assert p["sequence_number"] == i
+            assert len(p["text"].strip()) > 0
+
+
+def test_big_command_8_imported_books_integrity():
+    """Verify newly imported authentic works for Big Command 8 maintain full integrity."""
+    repo_root = Path(__file__).resolve().parent.parent
+    books_dir = repo_root / "data" / "books"
+
+    new_books = [
+        ("mahabharata_sabha_parva", 79, 350),
+        ("tibetan_tales", 51, 1584),
+        ("hindu_tales_sanskrit", 10, 588),
+    ]
+
+    for b_id, expected_ch, expected_pass in new_books:
+        # Check text file
+        t_path = books_dir / "texts" / f"{b_id}.jsonl"
+        assert t_path.is_file(), f"Missing text file for {b_id}"
+
+        # Check manifest file
+        m_path = books_dir / "manifests" / f"manifest_{b_id}.json"
+        assert m_path.is_file(), f"Missing manifest for {b_id}"
+        with open(m_path, "r", encoding="utf-8") as mf:
+            m_obj = json.load(mf)
+        assert m_obj["total_passages"] == expected_pass
+        assert m_obj["total_chapters"] == expected_ch
+
+        # Check passage sequence
+        passages = []
+        with open(t_path, "r", encoding="utf-8") as tf:
+            for line in tf:
+                passages.append(json.loads(line))
+        assert len(passages) == expected_pass
+        for i, p in enumerate(passages, 1):
+            assert p["sequence_number"] == i
+            assert len(p["text"].strip()) > 0
+
+
+def test_big_command_9_imported_books_integrity():
+    """Verify newly imported authentic works for Big Command 9 maintain full integrity."""
+    repo_root = Path(__file__).resolve().parent.parent
+    books_dir = repo_root / "data" / "books"
+
+    new_books = [
+        ("mahabharata_virata_parva", 72, 238),
+        ("english_mikir_vocabulary_sentences_1878", 10, 172),
+    ]
+
+    for b_id, expected_ch, expected_pass in new_books:
+        # Check text file
+        t_path = books_dir / "texts" / f"{b_id}.jsonl"
+        assert t_path.is_file(), f"Missing text file for {b_id}"
+
+        # Check manifest file
+        m_path = books_dir / "manifests" / f"manifest_{b_id}.json"
+        assert m_path.is_file(), f"Missing manifest for {b_id}"
+        with open(m_path, "r", encoding="utf-8") as mf:
+            m_obj = json.load(mf)
+        assert m_obj["total_passages"] == expected_pass
+        assert m_obj["total_chapters"] == expected_ch
+
+        # Check passage sequence
+        passages = []
+        with open(t_path, "r", encoding="utf-8") as tf:
+            for line in tf:
+                passages.append(json.loads(line))
+        assert len(passages) == expected_pass
+        for i, p in enumerate(passages, 1):
+            assert p["sequence_number"] == i
+            assert len(p["text"].strip()) > 0
+
+    # Verify annotations
+    mb_annot = books_dir / "annotations" / "annotations_mahabharata_virata_parva.json"
+    assert mb_annot.is_file()
+    with open(mb_annot, "r", encoding="utf-8") as af:
+        notes = json.load(af)
+    assert len(notes) == 56
+
+    nb_annot = books_dir / "annotations" / "annotations_english_mikir_vocabulary_sentences_1878.json"
+    assert nb_annot.is_file()
+    with open(nb_annot, "r", encoding="utf-8") as af:
+        notes = json.load(af)
+    assert len(notes) == 153

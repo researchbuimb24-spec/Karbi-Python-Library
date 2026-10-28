@@ -213,6 +213,10 @@ class BookImporter:
                 f.write(json.dumps(p.to_dict(), ensure_ascii=False) + "\n")
         temp_jsonl.replace(target_jsonl)
 
+        # Recompute SHA-256 directly from the canonical on-disk JSONL text file
+        content_sha256 = self.calculate_checksum(target_jsonl.read_bytes())
+        manifest.sha256_checksum = content_sha256
+
         # 2. Atomic write to manifests/
         self.manifests_dir.mkdir(parents=True, exist_ok=True)
         target_manifest = self.manifests_dir / f"manifest_{metadata.book_id}.json"
@@ -475,3 +479,62 @@ class BookImporter:
             overwrite=overwrite,
             translations=translations,
         )
+
+
+def sync_all_books_to_databases(
+    db_paths: Optional[List[Union[str, Path]]] = None,
+    books_dir: Optional[Union[str, Path]] = None,
+    catalog: Optional[BookCatalog] = None,
+) -> Dict[str, Any]:
+    """
+    Synchronizes all imported book JSONL text files on disk into SQLite databases and FTS5 indexes.
+    By default synchronizes both intentionally maintained databases:
+    1. Canonical repo root karbi.db
+    2. data/karbi.db
+    """
+    repo_root = Path(__file__).resolve().parent.parent.parent.parent
+    b_dir = Path(books_dir) if books_dir is not None else (repo_root / "data" / "books")
+    texts_dir = b_dir / "texts"
+    cat = catalog or BookCatalog(catalog_path=b_dir / "catalog.json")
+    book_map = {b.book_id: b for b in cat.list_books()}
+
+    if db_paths is None:
+        targets = [repo_root / "karbi.db", repo_root / "data" / "karbi.db"]
+    else:
+        targets = [Path(p) for p in db_paths]
+
+    text_files = sorted(list(texts_dir.glob("*.jsonl")))
+    total_passages_indexed = 0
+    books_indexed_count = 0
+
+    for db_target in targets:
+        importer = BookImporter(catalog=cat, db_path=db_target, base_dir=b_dir)
+        total_passages_this_db = 0
+        books_this_db = 0
+
+        for tf in text_files:
+            book_id = tf.stem
+            metadata = book_map.get(book_id)
+            if not metadata:
+                continue
+
+            passages: List[Passage] = []
+            with open(tf, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if line:
+                        passages.append(Passage.from_dict(json.loads(line)))
+
+            importer.index_book_to_db(metadata, passages)
+            total_passages_this_db += len(passages)
+            books_this_db += 1
+
+        total_passages_indexed = total_passages_this_db
+        books_indexed_count = books_this_db
+
+    return {
+        "total_books": books_indexed_count,
+        "total_passages": total_passages_indexed,
+        "databases": [str(t) for t in targets],
+        "status": "SUCCESS"
+    }

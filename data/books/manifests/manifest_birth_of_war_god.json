@@ -1,0 +1,14 @@
+{
+  "book_id": "birth_of_war_god",
+  "canonical_title": "The Birth of the War-God: A Poem by Kálidása",
+  "source_file_path": "data/books/texts/birth_of_war_god.jsonl",
+  "sha256_checksum": "65eb6b4d209439293630fd8ef5956f796115b3efe11c28924773f0e798b5717c",
+  "total_chapters": 7,
+  "total_passages": 72,
+  "language": "sa",
+  "import_timestamp": "2026-10-28T06:33:16.845352+00:00",
+  "licence": "Public Domain (US, UK, EU, India; translator deceased >70 years; published 1879; global public domain; Project Gutenberg eBook #31968)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 72 passages across 7 chapter(s)."
+}

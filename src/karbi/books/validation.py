@@ -93,6 +93,27 @@ def validate_book(
     if not metadata.licence:
         errors.append("Missing licence.")
 
+    # Source registration check
+    sources_files = [b_dir / "sources.jsonl", b_dir.parent / "sources" / "sources.jsonl"]
+    registered_sids = set()
+    for sf in sources_files:
+        if sf.is_file():
+            try:
+                with open(sf, "r", encoding="utf-8") as f:
+                    for s_line in f:
+                        if s_line.strip():
+                            s_data = json.loads(s_line)
+                            s_id = s_data.get("source_id") or s_data.get("id")
+                            if s_id:
+                                registered_sids.add(s_id)
+            except Exception:
+                pass
+    if metadata.source_id:
+        if registered_sids and metadata.source_id not in registered_sids:
+            errors.append(f"Source ID '{metadata.source_id}' is not registered in sources.jsonl.")
+    elif registered_sids:
+        warnings.append("Book does not specify a source_id.")
+
     if metadata.import_status == BookImportStatus.CATALOG_ONLY.value:
         if metadata.imported_passages_count > 0:
             errors.append(

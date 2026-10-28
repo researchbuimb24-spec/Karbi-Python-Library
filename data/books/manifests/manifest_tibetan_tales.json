@@ -1,0 +1,14 @@
+{
+  "book_id": "tibetan_tales",
+  "canonical_title": "Tibetan Tales, Derived from Indian Sources",
+  "source_file_path": "data/books/texts/tibetan_tales.jsonl",
+  "sha256_checksum": "3d3130302e65d1683ebbf82adb3087f2598cff9c5e060919a7ced68278d9300f",
+  "total_chapters": 51,
+  "total_passages": 1584,
+  "language": "bo",
+  "import_timestamp": "2026-10-28T08:04:06.082696+00:00",
+  "licence": "Public Domain (Project Gutenberg eBook #66870)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 1584 passages across 51 chapter(s)."
+}

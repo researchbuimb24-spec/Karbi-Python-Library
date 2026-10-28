@@ -1,0 +1,14 @@
+{
+  "book_id": "tales_of_the_sun",
+  "canonical_title": "Tales of the Sun; or, Folklore of Southern India",
+  "source_file_path": "data/books/texts/tales_of_the_sun.jsonl",
+  "sha256_checksum": "9b63a86d4c509842799ec65169b05ff5005d910faf8f248b14183236ba1336ef",
+  "total_chapters": 31,
+  "total_passages": 834,
+  "language": "en",
+  "import_timestamp": "2026-10-28T06:33:16.309856+00:00",
+  "licence": "Public Domain (US, UK, EU, India; authors deceased >70 years; published 1890; global public domain; Project Gutenberg eBook #37002)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 834 passages across 31 chapter(s)."
+}

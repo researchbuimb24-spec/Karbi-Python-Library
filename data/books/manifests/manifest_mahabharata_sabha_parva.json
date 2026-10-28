@@ -1,0 +1,14 @@
+{
+  "book_id": "mahabharata_sabha_parva",
+  "canonical_title": "The Mahabharata: Book 2, Sabha Parva",
+  "source_file_path": "data/books/texts/mahabharata_sabha_parva.jsonl",
+  "sha256_checksum": "e9d094b2cce5fb00141f0624afeee925fc5091351aab6c4c814db21c2e5932c9",
+  "total_chapters": 79,
+  "total_passages": 350,
+  "language": "sa",
+  "import_timestamp": "2026-10-28T08:04:06.082696+00:00",
+  "licence": "Public Domain (Project Gutenberg eBook #7965)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 350 passages across 79 chapter(s)."
+}

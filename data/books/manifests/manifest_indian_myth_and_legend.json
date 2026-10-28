@@ -1,0 +1,14 @@
+{
+  "book_id": "indian_myth_and_legend",
+  "canonical_title": "Indian Myth and Legend",
+  "source_file_path": "data/books/texts/indian_myth_and_legend.jsonl",
+  "sha256_checksum": "fdf4ddac549d79318a217f41c6bcd6995f362aedc40a9750779bdea15c48fc23",
+  "total_chapters": 27,
+  "total_passages": 2058,
+  "language": "en",
+  "import_timestamp": "2026-10-28T07:36:01.158551+00:00",
+  "licence": "Public Domain (US, UK, EU, India; author deceased >70 years; published 1913 >95 years; global public domain; Project Gutenberg eBook #47228)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 2058 passages across 27 chapter(s)."
+}

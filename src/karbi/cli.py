@@ -864,6 +864,32 @@ def run_books_audit(
     return 0 if report.failed_works_count == 0 else 1
 
 
+def run_books_sync(as_json: bool = False) -> int:
+    """Synchronizes all imported book passages to SQLite databases."""
+    from karbi.books.importer import sync_all_books_to_databases
+    try:
+        res = sync_all_books_to_databases()
+        if as_json:
+            print(json.dumps(res, indent=2, ensure_ascii=False))
+            return 0
+        print("=" * 60)
+        print("DATABASE SYNCHRONIZATION COMPLETE")
+        print("=" * 60)
+        print(f"Total Books Synced:    {res['total_books']}")
+        print(f"Total Passages Synced: {res['total_passages']}")
+        print("Target Databases:")
+        for db in res["databases"]:
+            print(f"  • {db}")
+        print("=" * 60)
+        return 0
+    except Exception as exc:
+        if as_json:
+            print(json.dumps({"status": "FAILED", "error": str(exc)}, indent=2))
+        else:
+            print(f"ERROR during database synchronization: {exc}", file=sys.stderr)
+        return 1
+
+
 def run_books(args: argparse.Namespace) -> int:
     """Dispatches 'karbi books' subcommands."""
     book_cmd = getattr(args, "book_command", None)
@@ -918,6 +944,8 @@ def run_books(args: argparse.Namespace) -> int:
             as_json=getattr(args, "json", False),
             no_save=getattr(args, "no_save", False),
         )
+    elif book_cmd == "sync":
+        return run_books_sync(as_json=getattr(args, "json", False))
     return 0
 
 
@@ -1048,6 +1076,10 @@ def build_parser() -> argparse.ArgumentParser:
     b_audit.add_argument("--book-id", "-b", help="Specific book ID to audit")
     b_audit.add_argument("--json", action="store_true", help="Output audit report in JSON format")
     b_audit.add_argument("--no-save", action="store_true", help="Do not write audit_report.json to disk")
+
+    # karbi books sync
+    b_sync = books_sub.add_parser("sync", help="Synchronize and rebuild all imported book passages into SQLite databases.")
+    b_sync.add_argument("--json", action="store_true", help="Output sync summary in JSON format")
 
     return parser
 

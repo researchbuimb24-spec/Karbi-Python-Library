@@ -1,0 +1,14 @@
+{
+  "book_id": "indian_poetry_arnold",
+  "canonical_title": "Indian Poetry: Containing 'The Indian Song of Songs', Two Books from the Iliad of India, and Other Oriental Poems",
+  "source_file_path": "data/books/texts/indian_poetry_arnold.jsonl",
+  "sha256_checksum": "492d3bdc825410db2ea522376f8d9dbf4cf62c55eeac8a54d9f96b6197dc3f24",
+  "total_chapters": 22,
+  "total_passages": 719,
+  "language": "sa",
+  "import_timestamp": "2026-10-28T07:36:01.917285+00:00",
+  "licence": "Public Domain (US, UK, EU, India; translator deceased >70 years; published 1881 >95 years; global public domain; Project Gutenberg eBook #25965)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 719 passages across 22 chapter(s)."
+}

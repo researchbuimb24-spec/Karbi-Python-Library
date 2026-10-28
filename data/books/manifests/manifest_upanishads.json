@@ -1,0 +1,14 @@
+{
+  "book_id": "upanishads",
+  "canonical_title": "The Upanishads",
+  "source_file_path": "data/books/texts/upanishads.jsonl",
+  "sha256_checksum": "99f6979e25c21c2586831fea51a258c460349ad78898d1b339bab1b675d3a5f5",
+  "total_chapters": 15,
+  "total_passages": 304,
+  "language": "sa",
+  "import_timestamp": "2026-10-28T07:36:01.011108+00:00",
+  "licence": "Public Domain (US, UK, EU, India; translator deceased >70 years; published 1919 >95 years; global public domain; Project Gutenberg eBook #3283)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 304 passages across 15 chapter(s)."
+}

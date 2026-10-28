@@ -392,36 +392,58 @@ Linguistic and cultural documentation of indigenous communities requires ethical
 
 The Karbi Language Library features an extensible, offline-capable digital book library subsystem located in `src/karbi/books/`. It enables researchers, linguists, and community members to store, organize, read, search, and align complete literary works with strict provenance tracking.
 
-### 1. Initial Collection & Catalogue (20 Works)
-The library catalogue (`data/books/catalog.json`) tracks 20 foundational Indian literary, philosophical, and folklore works with transparent bibliographic citations and copyright status:
+### 1. Library Collection & Catalogue (42 Works, 36 Imported)
+The digital book library catalogue (`data/books/catalog.json`) tracks 42 foundational literary, philosophical, folklore, and linguistic works with transparent bibliographic citations, copyright status, and structural segmentation.
 
-| Book ID | Canonical Title | Author / Source | Status | Imported | Licence |
+Currently, **36 works** are fully or partially imported comprising **29,947 passages** and **1,964 chapters/sections** indexed into SQLite FTS5. The remaining **6 works** remain honest `CATALOG_ONLY` entries pending high-resolution clean transcriptions (see Source Audit notes below).
+
+| Book ID | Canonical Title | Author / Source | Status | Imported | License / Provenance |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `bhagavad_gita` | **The Bhagavad Gita** | Vyāsa / Sir Edwin Arnold (1885) | `FULLY_IMPORTED` | 18 ch / 295 pass | Public Domain (Gutenberg #2388) |
-| `karbi_folktales_1908` | **Karbi Folk-Lore & Tales** | Stack, Sardoka & Lyall (1908) | `FULLY_IMPORTED` | 3 ch / 44 pass | Public Domain (Gutenberg #48706) |
-| `ramayana` | **The Ramayana of Valmiki** | Vālmīki / R. T. H. Griffith (1870) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #24869) |
-| `mahabharata` | **The Mahabharata of Vyasa** | Vyāsa / K. M. Ganguli (1883) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #7864) |
-| `panchatantra` | **The Panchatantra** | Vishnu Sharma / A. W. Ryder (1925) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (US 1925) |
-| `hitopadesha` | **The Hitopadesha** | Narayana / Sir Edwin Arnold (1861) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #13268) |
-| `upanishads` | **The Upanishads** | Vedic Sages / F. Max Müller (1879) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #3296) |
-| `rigveda` | **The Hymns of the Rigveda** | Vedic Rishis / R. T. H. Griffith (1896) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain |
-| `dhammapada` | **The Dhammapada** | Buddhist Canon / F. Max Müller (1881) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #2017) |
-| `jataka_tales` | **The Jataka Tales** | Buddhist Canon / E. B. Cowell (1895) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain |
-| `arthashastra` | **Kautilya's Arthashastra** | Kauṭilya / R. Shamasastry (1915) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain |
-| `indian_fairy_tales` | **Indian Fairy Tales** | Joseph Jacobs (1892) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #7128) |
-| `folk_tales_of_bengal` | **Folk-Tales of Bengal** | Rev. Lal Behari Day (1883) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #38488) |
-| `old_deccan_days` | **Old Deccan Days** | Mary Frere (1868) | `FULLY_IMPORTED` | 24 ch / 772 pass | Public Domain (Gutenberg #36696) |
-| `aesop_fables` | **Aesop's Fables** | Aesop / V. S. Vernon Jones (1912) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #11339) |
-| `history_of_assam_1906` | **A History of Assam** | Sir Edward Gait (1906) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain |
-| `buddhist_records_western_world` | **Si-Yu-Ki: Buddhist Records** | Xuanzang / Samuel Beal (1884) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain |
-| `shakuntala` | **Shakuntala** | Kālidāsa / Arthur W. Ryder (1912) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain (Gutenberg #16655) |
-| `history_of_hindu_chemistry` | **History of Hindu Chemistry** | Sir P. C. Ray (1902) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain |
-| `english_mikir_vocabulary_sentences_1878` | **Vocabulary & Sentences** | Rev. R. E. Neighbor (1878) | `CATALOG_ONLY` | 0 ch / 0 pass | Public Domain |
+| `aesop_fables` | **Aesop's Fables** | Aesop (attributed) / V. S. Vernon Jones | `FULLY_IMPORTED` | 284 ch / 373 pass | public_domain (SRC-BOOK-00014) |
+| `bhagavad_gita` | **The Bhagavad Gita** | Vyāsa (attributed) / Sir Edwin Arnold (1832-1904) | `FULLY_IMPORTED` | 18 ch / 258 pass | public_domain (SRC-BOOK-00001) |
+| `birth_of_war_god` | **The Birth of the War-God: A Poem by Kálidása** | Kālidāsa (c. 4th-5th century CE) / Ralph T. H. Griffith (1826-1906) | `FULLY_IMPORTED` | 7 ch / 72 pass | public_domain (SRC-BOOK-00031) |
+| `deccan_nursery_tales` | **Deccan Nursery Tales** | C. A. Kincaid (1870-1954) / Original | `FULLY_IMPORTED` | 20 ch / 72 pass | public_domain (SRC-BOOK-00024) |
+| `dhammapada` | **The Dhammapada** | Gautama Buddha (canonical) / F. Max Müller (1823-1900) | `FULLY_IMPORTED` | 26 ch / 414 pass | public_domain (SRC-BOOK-00008) |
+| `english_mikir_vocabulary_sentences_1878` | **A Vocabulary in English and Mikir: With Sentences Illustrating the Use of Words** | Rev. R. E. Neighbor / Rev. R. E. Neighbor | `PARTIALLY_IMPORTED` | 10 ch / 172 pass | public_domain (SRC-PUB-00003) |
+| `folk_tales_of_bengal` | **Folk-Tales of Bengal** | Rev. Lal Behari Day (1824-1892) / Rev. Lal Behari Day | `FULLY_IMPORTED` | 22 ch / 294 pass | public_domain (SRC-BOOK-00012) |
+| `folklore_santal_parganas` | **Folklore of the Santal Parganas** | Cecil Henry Bompas (translator/compiler) / Cecil Henry Bompas | `FULLY_IMPORTED` | 185 ch / 1364 pass | public_domain (SRC-BOOK-00027) |
+| `folktales_of_the_khasis` | **Folk-Tales of the Khasis** | Mrs. K. U. Rafy (Mrs. Rafy) / Mrs. K. U. Rafy | `FULLY_IMPORTED` | 32 ch / 486 pass | public_domain (SRC-BOOK-00028) |
+| `hindoo_tales_dandin` | **Hindoo Tales** | Daṇḍin (7th century CE) / P. W. Jacob | `FULLY_IMPORTED` | 11 ch / 684 pass | public_domain (SRC-BOOK-00025) |
+| `hindu_tales_sanskrit` | **Hindu Tales from the Sanskrit** | Traditional Sanskrit fable masters / Siddha Mohana Mitra (S. M. Mitra) | `FULLY_IMPORTED` | 10 ch / 588 pass | public_domain (SRC-BOOK-00041) |
+| `hitopadesha` | **The Hitopadesha (The Book of Good Counsels)** | Narayana Pandit / Sir Edwin Arnold (1832-1904) | `FULLY_IMPORTED` | 5 ch / 1060 pass | public_domain (SRC-BOOK-00005) |
+| `indian_fairy_tales` | **Indian Fairy Tales** | Joseph Jacobs (compiler/editor) / Original | `FULLY_IMPORTED` | 29 ch / 1032 pass | public_domain (SRC-BOOK-00011) |
+| `indian_fairy_tales_stokes` | **Indian Fairy Tales (Stokes)** | Traditional Indian narrators (Munshi Karim, Dunnoo, Mumpin, et al.) / Maive Stokes (1866-1884) | `FULLY_IMPORTED` | 30 ch / 835 pass | public_domain (SRC-BOOK-00030) |
+| `indian_myth_and_legend` | **Indian Myth and Legend** | Donald Alexander Mackenzie (1873-1936) / Original | `FULLY_IMPORTED` | 27 ch / 2058 pass | public_domain (SRC-BOOK-00038) |
+| `indian_poetry_arnold` | **Indian Poetry: Containing 'The Indian Song of Songs', Two Books from the Iliad of India, and Other Oriental Poems** | Jayadeva (c. 12th century), Vyāsa, and Narayana / Sir Edwin Arnold (1832-1904) | `FULLY_IMPORTED` | 22 ch / 719 pass | public_domain (SRC-BOOK-00037) |
+| `jataka_tales` | **Jataka Tales** | Traditional Buddhist Canon / Ellen C. Babbitt | `FULLY_IMPORTED` | 18 ch / 372 pass | public_domain (SRC-BOOK-00009) |
+| `karbi_folktales_1908` | **Karbi Folk-Lore and Folk-Tales (The Mikirs)** | Edward Stack (1849-1887) and Sardoka Perrin Kay / Sir Charles James Lyall (1845-1920) | `FULLY_IMPORTED` | 4 ch / 44 pass | public_domain (SRC-PUB-00001) |
+| `light_of_asia` | **The Light of Asia; or, The Great Renunciation** | Sir Edwin Arnold (1832-1904) / Sir Edwin Arnold | `FULLY_IMPORTED` | 8 ch / 298 pass | public_domain (SRC-BOOK-00033) |
+| `little_clay_cart` | **The Little Clay Cart** | King Shudraka (Śūdraka) / Arthur William Ryder (1877-1938) | `FULLY_IMPORTED` | 12 ch / 2314 pass | public_domain (SRC-BOOK-00023) |
+| `mahabharata` | **The Mahabharata of Krishna-Dwaipayana Vyasa** | Vyāsa (attributed) / Kisari Mohan Ganguli (1848-1908) | `PARTIALLY_IMPORTED` | 236 ch / 1526 pass | public_domain (SRC-BOOK-00003) |
+| `mahabharata_dutt` | **Maha-bharata: The Epic of Ancient India Condensed into English Verse** | Vyāsa (attributed) / Romesh Chunder Dutt (1848-1909) | `FULLY_IMPORTED` | 12 ch / 2150 pass | public_domain (SRC-BOOK-00032) |
+| `mahabharata_sabha_parva` | **The Mahabharata of Krishna-Dwaipayana Vyasa: Book 2, Sabha Parva** | Vyāsa (attributed) / Kisari Mohan Ganguli (1848-1908) | `FULLY_IMPORTED` | 79 ch / 350 pass | public_domain (SRC-BOOK-00039) |
+| `mahabharata_virata_parva` | **The Mahabharata: Book 4, Virata Parva** | Vyāsa / Kisari Mohan Ganguli (1883-1896) | `FULLY_IMPORTED` | 72 ch / 238 pass | Public Domain (SRC-BOOK-00042) |
+| `more_jataka_tales` | **More Jataka Tales** | Traditional Buddhist Canon / Ellen C. Babbitt | `FULLY_IMPORTED` | 21 ch / 364 pass | public_domain (SRC-BOOK-00021) |
+| `old_deccan_days` | **Old Deccan Days** | Mary Frere (1845-1911) and Anna Liberata de Souza / Original | `FULLY_IMPORTED` | 24 ch / 772 pass | public_domain (SRC-BOOK-00013) |
+| `ramayana` | **The Ramayana of Valmiki** | Vālmīki (attributed) / Ralph T. H. Griffith (1826-1906) | `FULLY_IMPORTED` | 493 ch / 1843 pass | public_domain (SRC-BOOK-00002) |
+| `shakuntala` | **Shakuntala (Abhijnanasakuntala)** | Kālidāsa (c. 4th-5th century CE) / Arthur W. Ryder (1877-1938) | `FULLY_IMPORTED` | 7 ch / 1380 pass | public_domain (SRC-BOOK-00017) |
+| `simla_village_tales` | **Simla Village Tales; Or, Folk Tales from the Himalayas** | Alice Elizabeth Dracott (1865-1939) / Alice Elizabeth Dracott, Mabel Baldwin, and Dracott | `FULLY_IMPORTED` | 56 ch / 1088 pass | public_domain (SRC-BOOK-00034) |
+| `tales_of_the_punjab` | **Tales of the Punjab** | Flora Annie Webster Steel (1847-1929) / Original | `FULLY_IMPORTED` | 42 ch / 1452 pass | public_domain (SRC-BOOK-00022) |
+| `tales_of_the_sun` | **Tales of the Sun; or, Folklore of Southern India** | Pandit S. M. Natesa Sastri (1859-1906) and Mrs. Howard Kingscote (Lucas Cleeve, 1868-1908) / Pandit S. M. Natesa Sastri | `FULLY_IMPORTED` | 31 ch / 834 pass | public_domain (SRC-BOOK-00029) |
+| `the_kacharis` | **The Kacháris** | Rev. Sidney Endle (1840-1907) / Rev. Sidney Endle and J. D. Anderson | `FULLY_IMPORTED` | 9 ch / 648 pass | public_domain (SRC-BOOK-00035) |
+| `tibetan_tales` | **Tibetan Tales, Derived from Indian Sources** | Traditional Buddhist narrative masters / F. Anton von Schiefner and W. R. S. Ralston | `FULLY_IMPORTED` | 51 ch / 1584 pass | public_domain (SRC-BOOK-00040) |
+| `twenty_two_goblins` | **Twenty-Two Goblins** | Traditional Sanskrit Canon (Vetāla Pañcaviṃśati) / Arthur William Ryder (1877-1938) | `FULLY_IMPORTED` | 24 ch / 651 pass | public_domain (SRC-BOOK-00036) |
+| `upanishads` | **The Upanishads** | Vedic Sages (attributed) / Swami Paramananda (1884-1940) | `FULLY_IMPORTED` | 15 ch / 304 pass | public_domain (SRC-BOOK-00006) |
+| `vikram_and_the_vampire` | **Vikram and the Vampire** | Traditional (Vetala Panchavimshati) / Sir Richard F. Burton (1821-1890) | `FULLY_IMPORTED` | 12 ch / 1254 pass | public_domain (SRC-BOOK-00026) |
+| `arthashastra` | **Kautilya's Arthashastra** | Kauṭilya (Chanakya / Vishnugupta) / R. Shamasastry (1868-1944) | `CATALOG_ONLY` | 0 ch / 0 pass | public_domain (SRC-BOOK-00010) |
+| `buddhist_records_western_world` | **Si-Yu-Ki: Buddhist Records of the Western World** | Xuanzang / Hiuen Tsiang (602-664) / Samuel Beal (1825-1889) | `CATALOG_ONLY` | 0 ch / 0 pass | public_domain (SRC-BOOK-00016) |
+| `history_of_assam_1906` | **A History of Assam** | Sir Edward Albert Gait (1863-1950) / Original | `CATALOG_ONLY` | 0 ch / 0 pass | public_domain (SRC-BOOK-00015) |
+| `history_of_hindu_chemistry` | **A History of Hindu Chemistry** | Sir Prafulla Chandra Ray (1861-1944) / Original | `CATALOG_ONLY` | 0 ch / 0 pass | public_domain (SRC-BOOK-00018) |
+| `panchatantra` | **The Panchatantra** | Vishnu Sharma (attributed) / Arthur W. Ryder (1877-1938) | `CATALOG_ONLY` | 0 ch / 0 pass | public_domain (SRC-BOOK-00004) |
+| `rigveda` | **The Hymns of the Rigveda** | Vedic Rishis (attributed) / Ralph T. H. Griffith (1826-1906) | `CATALOG_ONLY` | 0 ch / 0 pass | public_domain (SRC-BOOK-00007) |
 
 * **Catalogue Integrity:** Books marked `CATALOG_ONLY` contain verified bibliographic and rights metadata, with explicit notes on missing acquisition portions. They never claim passage counts until the full text is verified and imported.
-* **Complete Texts Imported:**
-  * **The Bhagavad Gita:** Complete 18 chapters and 295 stanzas/passages with chapter titles, verse structure, and full-text search indexing.
-  * **Karbi Folk-Lore & Folk-Tales:** 3 complete traditional narratives (The Story of a Frog, The Story of the Orphan and his Uncles, and The Story of Harata Kunwar) featuring 44 passages, including authentic Karbi language passages and parallel English translations.
+* **Corpus Scope:** Includes foundational regional folklore (e.g. Karbi Folk-Lore 1908, Neighbor 1878 Mikir Sentences, Kachari Folk-Lore, Khasi Folk-Tales, Santal Parganas, Simla Village Tales), classical epics (Ramayana, Mahabharata Adi, Sabha, and Virata Parvas, Dutt's Condensed Mahabharata), philosophical texts (Bhagavad Gita, Dhammapada, Upanishads), and classical drama/poetry (Shakuntala, Birth of the War-God).
 
 ---
 
@@ -457,6 +479,14 @@ karbi books validate --book-id bhagavad_gita
 
 # 7. Display aggregated book library statistics
 karbi books stats
+
+# 8. Audit all books against registered sources and security invariants
+karbi books audit
+karbi books audit --json
+
+# 9. Synchronize and rebuild SQLite FTS5 database indices
+karbi books sync
+karbi books sync --json
 ```
 
 ---

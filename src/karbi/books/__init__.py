@@ -21,7 +21,7 @@ from karbi.books.models import (
     VocabularyCandidate,
 )
 from karbi.books.catalog import BookCatalog, get_default_catalog_path
-from karbi.books.importer import BookImporter, get_default_books_dir
+from karbi.books.importer import BookImporter, get_default_books_dir, sync_all_books_to_databases
 from karbi.books.reader import BookReader
 from karbi.books.search import BookSearchEngine
 from karbi.books.audit import BookAuditResult, BookAuditor, LibraryAuditReport
@@ -57,4 +57,5 @@ __all__ = [
     "get_default_catalog_path",
     "validate_book",
     "validate_book_catalog",
+    "sync_all_books_to_databases",
 ]

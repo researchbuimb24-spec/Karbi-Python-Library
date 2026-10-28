@@ -48,7 +48,6 @@ from karbi.core.review import (
     CommunityReviewValidationResult,
     validate_community_review_csv,
 )
-from karbi.cli import main as cli_main
 from karbi.dictionary import DictionaryEntry, lookup, lookup_all
 from karbi.grammar import (
     count_with_classifier,
@@ -116,3 +115,10 @@ __all__ = [
     "validate_book",
     "get_book_statistics",
 ]
+
+
+def __getattr__(name: str):
+    if name == "cli_main":
+        from karbi.cli import main as _cli_main
+        return _cli_main
+    raise AttributeError(f"module {__name__!r} has no attribute {name!r}")

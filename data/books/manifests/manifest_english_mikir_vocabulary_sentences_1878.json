@@ -1,0 +1,10 @@
+{
+  "book_id": "english_mikir_vocabulary_sentences_1878",
+  "sha256_checksum": "38d61fdf7cc80edecdf739f5073db23890afb13fc8f21aff8dd75feb181ea9fd",
+  "total_passages": 172,
+  "total_chapters": 10,
+  "import_timestamp": "2026-10-28T13:30:12.383613+00:00",
+  "format": "jsonl",
+  "verified_by": "BookImporter / Big Command 9",
+  "license": "Public Domain (Published 1878, Baptist Mission Press, Calcutta)"
+}

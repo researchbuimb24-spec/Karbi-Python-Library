@@ -1,0 +1,10 @@
+{
+  "book_id": "mahabharata_virata_parva",
+  "sha256_checksum": "dba1ed1798902ac301eec0de65114bef3d8ee95f0fef4ec2bb688cf618f40427",
+  "total_passages": 238,
+  "total_chapters": 72,
+  "import_timestamp": "2026-10-28T13:30:12.383613+00:00",
+  "format": "jsonl",
+  "verified_by": "BookImporter / Big Command 9",
+  "license": "Public Domain (Published 1883-1896, Bharata Press, Calcutta)"
+}

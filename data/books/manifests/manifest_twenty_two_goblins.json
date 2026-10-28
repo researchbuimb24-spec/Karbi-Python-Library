@@ -1,0 +1,14 @@
+{
+  "book_id": "twenty_two_goblins",
+  "canonical_title": "Twenty-Two Goblins",
+  "source_file_path": "data/books/texts/twenty_two_goblins.jsonl",
+  "sha256_checksum": "a5e9d9554bc5be31e1c046ed8762ff4528e8688a374ed3fd81cc9dfbe5c76e2e",
+  "total_chapters": 24,
+  "total_passages": 651,
+  "language": "sa",
+  "import_timestamp": "2026-10-28T07:03:19.918250+00:00",
+  "licence": "Public Domain (US, UK, EU, India; translator deceased >70 years; published 1917 >95 years; global public domain; Project Gutenberg eBook #2290)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 651 passages across 24 chapter(s)."
+}

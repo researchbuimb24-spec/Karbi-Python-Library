@@ -1,0 +1,14 @@
+{
+  "book_id": "simla_village_tales",
+  "canonical_title": "Simla Village Tales; Or, Folk Tales from the Himalayas",
+  "source_file_path": "data/books/texts/simla_village_tales.jsonl",
+  "sha256_checksum": "3c4b4f379ddc2f4e17d3439a8b90a28667a18a38d529d358bae63069cb70beed",
+  "total_chapters": 56,
+  "total_passages": 1088,
+  "language": "en",
+  "import_timestamp": "2026-10-28T07:03:19.386339+00:00",
+  "licence": "Public Domain (US, UK, EU, India; author deceased >70 years; published 1906 >95 years; global public domain; Project Gutenberg eBook #58816)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 1088 passages across 56 chapter(s)."
+}

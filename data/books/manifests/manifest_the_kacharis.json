@@ -1,0 +1,14 @@
+{
+  "book_id": "the_kacharis",
+  "canonical_title": "The Kacháris",
+  "source_file_path": "data/books/texts/the_kacharis.jsonl",
+  "sha256_checksum": "fd36ba48eb0c131d2011112a26bb3cedc7692dd52bf4737b58d6da9ea41ea170",
+  "total_chapters": 9,
+  "total_passages": 648,
+  "language": "en",
+  "import_timestamp": "2026-10-28T07:03:19.660308+00:00",
+  "licence": "Public Domain (US, UK, EU, India; author and editor deceased >70 years; published 1911 >95 years; global public domain; Project Gutenberg eBook #50008)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 648 passages across 9 chapter(s)."
+}

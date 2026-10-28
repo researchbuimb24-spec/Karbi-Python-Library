@@ -1,0 +1,14 @@
+{
+  "book_id": "mahabharata_dutt",
+  "canonical_title": "Maha-bharata: The Epic of Ancient India Condensed into English Verse",
+  "source_file_path": "data/books/texts/mahabharata_dutt.jsonl",
+  "sha256_checksum": "56b1a807a75afd1278e96d35d3a0997aee678d9c405f19dd76c20d4b6d984a5e",
+  "total_chapters": 12,
+  "total_passages": 2150,
+  "language": "sa",
+  "import_timestamp": "2026-10-28T06:33:16.947316+00:00",
+  "licence": "Public Domain (US, UK, EU, India; translator deceased >70 years; published 1899; global public domain; Project Gutenberg eBook #19630)",
+  "copyright_status": "public_domain",
+  "dry_run": false,
+  "notes": "Imported 2150 passages across 12 chapter(s)."
+}
